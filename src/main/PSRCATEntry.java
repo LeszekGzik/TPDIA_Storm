@@ -1,5 +1,8 @@
 package spouts;
 
+import java.util.HashMap;
+import java.util.Map;
+
 //public class PSRCATEntry {
 //
 //}
@@ -36,13 +39,13 @@ package spouts;
 
 // For coordinate transformations.
 //import com.ibm.icu.impl.*;
-import ephem;
+//import ephem;
 
 import com.ibm.icu.impl.CalendarAstronomer;
 import com.ibm.icu.impl.CalendarAstronomer.Ecliptic;
 
 //from astropy.coordinates import SkyCoord
-import SkyCoord;
+//import SkyCoord;
 
 // ******************************
 //
@@ -52,6 +55,24 @@ import SkyCoord;
 
 public class PSRCATEntry {
 
+	
+	//String[] sourceParameters;
+	Map<String, String> sourceParameters= new HashMap<String, String>();
+    String sourceName;
+    String JName;
+    String BName;
+    double refsep;
+    String coord;
+
+    String KEY_PSRJ;
+    String KEY_PSRB;
+    String KEY_RAJ;
+    String KEY_DECJ;
+    String KEY_ELAT;
+    String KEY_ELONG;
+    String KEY_P0;
+    String KEY_DM;
+    String KEY_F0;
 	/*
     Represents a known radio source in the ANTF catalog
     file. The class is initialized using a unique name
@@ -103,12 +124,11 @@ public class PSRCATEntry {
         // dictionary in particular, stores information
         // collected from the ATNF file, as key-value
         // pairs. The keys are specified below.
-        this.sourceParameters = {};
         this.sourceName = name;
         this.JName = name;
         this.BName = name;
         this.refsep = 0.0;
-        this.coord = None;
+        this.coord = null;
 
         // Initialise flags, used to process data. 
         // These flags correspond to the keywords used
@@ -116,23 +136,28 @@ public class PSRCATEntry {
         // used to access data in the 'sourceParameters'
         // dictionary.
         
-        this.KEY_PSRJ = 'PSRJ';
-        this.KEY_PSRB = 'PSRB';
-        this.KEY_RAJ = 'RAJ';
-        this.KEY_DECJ = 'DECJ';
-        this.KEY_ELAT = 'ELAT';
-        this.KEY_ELONG = 'ELONG';
-        this.KEY_P0 = 'P0';
-        this.KEY_DM = 'DM';
-        this.KEY_F0 = 'F0';
+        this.KEY_PSRJ = "PSRJ";
+        this.KEY_PSRB = "PSRB";
+        this.KEY_RAJ = "RAJ";
+        this.KEY_DECJ = "DECJ";
+        this.KEY_ELAT = "ELAT";
+        this.KEY_ELONG = "ELONG";
+        this.KEY_P0 = "P0";
+        this.KEY_DM = "DM";
+        this.KEY_F0 = "F0";
 
         // Do some source initialisation. This is required 
         // as some known sources in the ATNF catalog, are
         // missing parameters.
-        this.sourceParameters[this.KEY_RAJ] = '00:00:00';
-        this.sourceParameters[this.KEY_DECJ] = '00:00:00';
-        this.sourceParameters[this.KEY_ELONG] = '0';
-        this.sourceParameters[this.KEY_ELAT] = '0';
+        
+        sourceParameters.put(KEY_RAJ, "00:00:00");
+        sourceParameters.put(KEY_DECJ, "00:00:00");
+        sourceParameters.put(KEY_ELONG, "0");
+        sourceParameters.put(KEY_ELAT, "0");
+//        this.sourceParameters[this.KEY_RAJ] = "00:00:00";
+//        this.sourceParameters[this.KEY_DECJ] = "00:00:00";
+//        this.sourceParameters[this.KEY_ELONG] = "0";
+//        this.sourceParameters[this.KEY_ELAT] = "0";
     }
 
     
@@ -185,11 +210,11 @@ public class PSRCATEntry {
     public boolean process_atnf_formatted_line(String line_from_file) {//string or ANTF string
         
         // First some basic error checking.
-        if (line_from_file == NULL)
-            return FALSE;
+        if (line_from_file == null)
+            return false;
         else {
         	if(line_from_file.isEmpty())  // Empty strings are False.
-        		return TRUE;
+        		return true;
         }
         // Split line of text on whitespace. This produces a 
         // list of string literals.
@@ -229,11 +254,11 @@ public class PSRCATEntry {
             // 00:00:00.00
             // Here right ascension should be 
             // in hh:mm:ss.s format.
-            raj = str(value[0]);
+            String raj = value[0];
 
             // Split on the colon symbol to break it 
             // into parts.
-            raj_parts = raj.split(":");
+            String[] raj_parts = raj.split(":");
 
             // Count the parts - there should be three if we
             // have an RA of the form 00:00:00. Else if the 
@@ -241,7 +266,7 @@ public class PSRCATEntry {
             // than three parts. These must be corrected, 
             // since we carry out known source matching based
             // on sky location.
-            length = len(raj_parts);
+            int length = raj_parts.length;
 
             // If length is less than three, add zeroes to 
             // make it complete. This will add some inaccuracy,
@@ -253,18 +278,21 @@ public class PSRCATEntry {
 
                     raj += ":00:00";  // Add mm:ss parts.
                     value[0] = raj;
-                    this.sourceParameters[key] = value;
+                    sourceParameters.put(key, value.toString());
+                    //this.sourceParameters[key] = value;
                 }
                 else {
                 	if(length == 2) {
                 		raj += ":00";  // Add ss parts.
                         value[0] = raj;
-                        this.sourceParameters[key] = value;
+                        sourceParameters.put(key, value.toString());
+                        //this.sourceParameters[key] = value;
                 	}
                 }
             }       
             else {
-            	this.sourceParameters[key] = value;
+            	sourceParameters.put(key, value.toString());
+            	//this.sourceParameters[key] = value;
             }
                 
         // If the text contains declination (DEC).
@@ -276,11 +304,11 @@ public class PSRCATEntry {
             // +00:00:00.00 or -00:00:00.00
             // Here we have the declination described 
             // in dd:mm:ss.s format.
-            decj = str(value[0]);
+            String decj = value[0];
 
             // Split on the colon symbol to break it
             // into parts.
-            decj_parts = decj.split(":");
+            String[] decj_parts = decj.split(":");
 
             // Count the parts - there should be three if we 
             // have a DEC of the form 00:00:00. Else if the 
@@ -288,7 +316,7 @@ public class PSRCATEntry {
             // than three. These must be corrected since we 
             // carry out known source matching based on sky 
             // location.
-            length = len(decj_parts);
+            int length = decj_parts.length;
 
             // If length is less than three, add zeroes to 
             // make it complete. This will add some inaccuracy,
@@ -299,19 +327,22 @@ public class PSRCATEntry {
 
                     decj += ":00:00";  // Add mm:ss parts.
                     value[0] = decj;
-                    this.sourceParameters[key] = value;
+                    sourceParameters.put(key, value.toString());
+                    //this.sourceParameters[key] = value;
 
                 }
                 else
                 	if (length == 2) {
                 		decj += ":00";  // Add ss parts.
                 		value[0] = decj;
-                		this.sourceParameters[key] = value;
+                		sourceParameters.put(key, value.toString());
+                		//this.sourceParameters[key] = value;
                 	}
             }
             else
             {
-                this.sourceParameters[key] = value;
+            	sourceParameters.put(key, value.toString());
+                //this.sourceParameters[key] = value;
             }	
             
         	}
@@ -322,75 +353,86 @@ public class PSRCATEntry {
        		// Here frequency is automatically computed from
        		// the period.
 
-       		try {
-       			this.sourceParameters[key] = value;
-       			this.sourceParameters[this.KEY_F0] =[str(float(1.0) / float(value[0]))];
-       		}
-        	catch(Exception ZeroDivisionError) {
+       		if(Double.valueOf(value[0]) == 0)
+       		{
+       			sourceParameters.put(key, value.toString());
+       			sourceParameters.put(KEY_F0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
+       			//this.sourceParameters[key] = value;
+       			//this.sourceParameters[this.KEY_F0] =[str(float(1.0) / float(value[0]))];
+       		}else
+        	{
 
                 // This error will only occur if period is 
                 // zero - which it shouldn't be.
-                this.sourceParameters[key] = ['1.0'];
-                this.sourceParameters[this.KEY_F0] = ['1.0'];
+        		sourceParameters.put(key, "1.0");
+        		sourceParameters.put(KEY_F0, "1.0");
+                //this.sourceParameters[key] = ['1.0'];
+                //this.sourceParameters[this.KEY_F0] = ['1.0'];
         	}
         	
         }
         else
         {
-        	if(key == this.KEY_F0) {  // F0 is the frequency in Hz.
+        	if(key.equals(KEY_F0)) {  // F0 is the frequency in Hz.
         	// Here period is automatically computed from 
         	// the frequency.
-        		try {
-        			this.sourceParameters[key] = value;
-        			this.sourceParameters[this.KEY_P0] =[str(float(1.0) / float(value[0]))];
+        		if(Double.valueOf(value[0]) == 0){
+        			sourceParameters.put(key, value.toString());
+        			sourceParameters.put(KEY_P0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
+//        			this.sourceParameters[key] = value;
+//        			this.sourceParameters[this.KEY_P0] =[str(float(1.0) / float(value[0]))];
         		}
-        		catch(ZeroDivisionError)
+        		else
         		{
         			// This error will only occur if frequency 
         			// is zero - which it shouldn't be.
-        			this.sourceParameters[key] = ['1.0'];
-        			this.sourceParameters[this.KEY_F0] = ['1.0'];
+        			sourceParameters.put(key, "1.0");
+        			sourceParameters.put(KEY_F0, "1.0");
+//        			this.sourceParameters[key] = ['1.0'];
+//        			this.sourceParameters[this.KEY_F0] = ['1.0'];
         		}
         	}
         }
        
-        if(key == this.KEY_ELONG) {  // Ecliptic longitude
-        	this.sourceParameters[key] = value;
+        if(key.equals(this.KEY_ELONG)) {  // Ecliptic longitude
+        	sourceParameters.put(key, value.toString());
         }
         
-        if(key == this.KEY_ELAT)   // Ecliptic latitude
+        if(key.equals(this.KEY_ELAT))   // Ecliptic latitude
         {
-        	this.sourceParameters[key] = value;
+        	sourceParameters.put(key, value.toString());
         }
         else
         {
             // No matter what, we add any other parameter 
             // we find to the parameters dictionary
-            this.sourceParameters[key] = value;
+        	sourceParameters.put(key, value.toString());
         }
         // Check the coordinates stored are correct, and 
         // update them as appropriate.
-        ra = this.get_parameter(this.KEY_RAJ);
-        dec = this.get_parameter(this.KEY_DECJ);
-        elong = this.get_parameter(this.KEY_ELONG);
-        elat = this.get_parameter(this.KEY_ELAT);
+        String ra = this.get_parameter(this.KEY_RAJ);
+        String dec = this.get_parameter(this.KEY_DECJ);
+        String elong = this.get_parameter(this.KEY_ELONG);
+        String elat = this.get_parameter(this.KEY_ELAT);
 
         // If no RA or DEC are supplied, then elong and 
         // elat must have been provided instead. This is 
         // due to the nature of the ATNF catalog file (this
         // is empirically observed to be the case).
         if (ra == null && dec == null && elong != null && elat != null) {
-            corrected_coords = this.checkCoords('00:00:00','00:00:00', elong, elat);
+            String[] corrected_coords = this.checkCoords("00:00:00","00:00:00", elong, elat);
             // corrected_coords = [ra, dec, elong, elat]
-            this.sourceParameters[this.KEY_RAJ] =\ [corrected_coords[0]]
-            this.sourceParameters[this.KEY_DECJ] =\ [corrected_coords[1]]
+            sourceParameters.put(KEY_RAJ, corrected_coords[0]);
+            sourceParameters.put(KEY_DECJ, corrected_coords[1]);
+//            this.sourceParameters[this.KEY_RAJ] = [corrected_coords[0]]
+//            this.sourceParameters[this.KEY_DECJ] = [corrected_coords[1]]
         }
         // Return true, assuming there have been no errors.
         // It would be better to check that values have been 
         // correctly set in the parameters dictionary, but I 
         // don't currently have the time to implement such 
         // detailed checks.
-        return True
+        return true;
     }
     // ******************************************************
 
@@ -452,7 +494,7 @@ public class PSRCATEntry {
 
     	CalendarAstronomer calendarAstronomer;
     	
-        if (RA.equals("00:00:00") && DEC.equals("00:00:00")) {
+        if (RA.equals("00:00:00") && DEC.equals("00:00:00")) 
 
             // No RA and DEC provided. Try to create from
             // EL and EB
@@ -460,22 +502,23 @@ public class PSRCATEntry {
 
                 // Here just return the inputs, since we 
                 // can't convert...
-                return [RA, DEC, EL, EB]
-
-            else:
+                return  new String[] {RA, DEC, EL, EB};
+            }
+            else {
 
                 // Use pyephem to convert from ecliptic 
                 // to Equatorial coordinates...
-            	ec = calendarAstronomer.eclipticToEquatorial(new Ecliptic(EB, EL))
-            	new Ecliptic(lat, lon)
+            	ec = calendarAstronomer.eclipticToEquatorial(new Ecliptic(EB, EL));
+            	//new Ecliptic(lat, lon)
+            	gal = calendarAstronomer.equa;
                 Equatorial eq;
-            	//eq.
+            	eq.
             	Ecliptic ecli;
             	ecli.
             	//ec = atan2((cos))
-                ec = ephem.Ecliptic(EL, EB, epoch='2000')
-                RA = str(ec.to_radec()[0])
-                DEC = str(ec.to_radec()[1])
+                ec = ephem.Ecliptic(EL, EB, epoch='2000');
+                RA = str(ec.to_radec()[0]);
+                DEC = str(ec.to_radec()[1]);
 
                 // Since we can't just convert from RA and 
                 // DEC, to GL and GB in pyephem, we instead 
@@ -483,65 +526,63 @@ public class PSRCATEntry {
                 // that we first do some daft parsing of the 
                 // string into pieces, then reform it in to 
                 // the format required by astropy...
-                RA_COMPS = RA.split(":")
-                DEC_COMPS = DEC.split(":")
+                RA_COMPS = RA.split(":");
+                DEC_COMPS = DEC.split(":");
 
                 // Now reform the text into astropy format...
-                coordinateString = RA_COMPS[0] + "h" +\
-                                   RA_COMPS[1] + "m" +\
-                                   RA_COMPS[2] + "s " +\
-                                   DEC_COMPS[0] + "d" +\
-                                   DEC_COMPS[1] + "m" + \
-                                   DEC_COMPS[2] + "s"
+                coordinateString = RA_COMPS[0] + "h" +
+                                   RA_COMPS[1] + "m" +
+                                   RA_COMPS[2] + "s " +
+                                   DEC_COMPS[0] + "d" +
+                                   DEC_COMPS[1] + "m" +
+                                   DEC_COMPS[2] + "s";
 
                 // Now get galactic coordinates.
-                GL, GB = str(SkyCoord(coordinateString)
-                             .galactic.to_string()).split()
+                GL, GB = str(SkyCoord(coordinateString).galactic.to_string()).split();
 
-                return [RA, DEC, GL, GB]
-
-        if EL == "0" and EB == "0":
+                return [RA, DEC, GL, GB];
+            }
+        
+        if(EL.equals("0") && EB.equals("0")) {
 
             // No EL and EB provided.
-            if "00:00:00" in RA and "00:00:00" in DEC:
+            if(RA.equals("00:00:00") && DEC.equals("00:00:00"){
 
                 // Here just return the inputs, since we 
                 // can't convert...
-                return [RA, DEC, EL, EB]
+                return [RA, DEC, EL, EB];
+            }
 
-            else:
+            else {
                 // Since we can't just convert from RA and 
                 // DEC to GL and GB in pyephem, we instead 
                 // use astropy to do the job. This requires
                 // that we first do some daft parsing of the
                 // string into pieces, then reform it in to
                 // the format required by astropy...
-                RA_COMPS = \
-                    this.checkFormatEquatorialCoordinate(
-                        RA).split(":")
-                DEC_COMPS = \
-                    this.checkFormatEquatorialCoordinate(
-                        DEC).split(":")
+                RA_COMPS = this.checkFormatEquatorialCoordinate(RA).split(":");
+                DEC_COMPS = this.checkFormatEquatorialCoordinate(DEC).split(":");
 
                 // Now reform the text into astropy format...
-                coordinateString = RA_COMPS[0] + "h" + \
-                                   RA_COMPS[1] + "m" + \
-                                   RA_COMPS[2] + "s " + \
-                                   DEC_COMPS[0] + "d" + \
-                                   DEC_COMPS[1] + "m" + \
-                                   DEC_COMPS[2] + "s"
+                coordinateString = RA_COMPS[0] + "h" + 
+                                   RA_COMPS[1] + "m" + 
+                                   RA_COMPS[2] + "s " + 
+                                   DEC_COMPS[0] + "d" + 
+                                   DEC_COMPS[1] + "m" + 
+                                   DEC_COMPS[2] + "s";
 
                 // Now get galactic coordinates.
-                GL, GB = str(SkyCoord(coordinateString)
-                             .galactic.to_string()).split()
+                GL, GB = str(SkyCoord(coordinateString).galactic.to_string()).split();
 
                 return [RA, DEC, GL, GB];
+            }
+        }
 
         return [RA, DEC, EL, EB];
     }
     // *****************************************************
 
-    public get_parameter(String key) {
+    public String get_parameter(String key) {
         /*
         Attempts to retrieve a parameter from the 
         sourceParameters dictionary. If the parameter is 
@@ -601,20 +642,17 @@ public class PSRCATEntry {
 
         */
 
-        try:
-            value = this.sourceParameters[key]
-
-            if value[0] is not None:
-                return value[0]
-            else:
-                return None
-        except KeyError:
-            return None
-
+        
+        	String value = sourceParameters.get(key);
+            //value = this.sourceParameters[key];
+        	return value;
+        		
+       
+    }
     // ******************************************************
 
-    def getRefSep(this):
-        """
+    public float getRefSep() {
+        /*
         Computes the angular separation between this 
         PSRCATEntry object, and a reference point at 
         (RA=00:00:00,DEC=00:00:00). Returns the separation
@@ -641,35 +679,34 @@ public class PSRCATEntry {
         >>> entry.process_atnf_formatted_line(DEC_line)
         >>> print entry.getRefSep()
         2.5
-        """
+        */
         // Equatorial parameters
-        ra = this.get_parameter(this.KEY_RAJ)
-        dec = this.get_parameter(this.KEY_DECJ)
+        String ra = this.get_parameter(KEY_RAJ);
+        String dec = this.get_parameter(KEY_DECJ);
 
-        if (ra != None and dec != None):
-            RAJ_Components = ra.split(":")
-            RAJ = RAJ_Components[0] + \
-                  'h' + RAJ_Components[1] + \
-                  'm' + RAJ_Components[2] + 's'
+        if (ra != null && dec != null) {
+            String[] RAJ_Components = ra.split(":");
+            String RAJ = RAJ_Components[0] + 
+                  'h' + RAJ_Components[1] + 
+                  'm' + RAJ_Components[2] + 's';
 
-            DEC_Components = dec.split(":")
-            DEC = DEC_Components[0] + \
-                  'd' + DEC_Components[1] + \
-                  'm' + DEC_Components[2] + 's'
+            String[] DEC_Components = dec.split(":");
+            String DEC = DEC_Components[0] + 
+                  'd' + DEC_Components[1] + 
+                  'm' + DEC_Components[2] + 's';
 
-            this.coord = SkyCoord(RAJ, DEC, frame='fk5')
-            ref = SkyCoord('0h0m0s', '0d0m0s', frame='fk5')
+            this.coord = SkyCoord(RAJ, DEC, frame = "fk5");
+            ref = SkyCoord("0h0m0s", "0d0m0s", frame = "fk5");
 
             // Convert to degrees by dividing by 3,600
-            this.refsep = \
-                this.coord.separation(ref).arcsecond / 3600
-
-        return this.refsep
-
+            this.refsep = this.coord.separation(ref).arcsecond / 3600;
+        }
+        return this.refsep;
+    }
     // ******************************************************
 
-    def calcsep(this, coord):
-        """
+    public float calcsep(coord) {
+        /*
         Computes the angular separation between this 
         PSRCATEntry object, and a reference point described 
         by the coord object (from Astropy).
@@ -697,29 +734,29 @@ public class PSRCATEntry {
         >>> entry.process_atnf_formatted_line(DEC_line)
         >>> print entry.calcsep(coord) 
         2.5
-        """
+        */
 
-        if (coord != None):
+        if (coord != null){
 
-            if this.coord != None:
-                sep = this.coord.separation(
-                    coord).arcsecond / 3600
-
-                return sep
-            else:
+            if(this.coord != null) {
+                sep = this.coord.separation(coord).arcsecond / 3600;
+                return sep;
+            }
+            else
                 // Return a large separation if it 
                 // cannot be computed.
-                return 100000 
-        else:
+                return 100000; 
+        }
+        else
             // Return a large separation if it cannot 
             // be computed.
-            return 100000 
-            
+            return 100000;
+    }
 
     // ******************************************************
 
-    def __str__(this):
-        """
+    public String __str__() {
+        /*
         Overridden method that provides a neater string 
         representation of this class. This is useful when 
         writing these objects to a file or the terminal.
@@ -744,16 +781,23 @@ public class PSRCATEntry {
         >>> e.process_atnf_formatted_line('DM 12.0 6')
         >>> print str(e)
         J0006+1834,00:06:04.8,+18:34:59,0.6937476,12.0
-        """
+        */
 
         // Extract the key parameters.
-        raj = this.get_parameter("RAJ")
-        decj = this.get_parameter("DECJ")
-        p0 = this.get_parameter("P0")
-        dm = this.get_parameter("DM")
+        String raj = this.get_parameter("RAJ");
+        String decj = this.get_parameter("DECJ");
+        String p0 = this.get_parameter("P0");
+        String dm = this.get_parameter("DM");
 
-        return this.sourceName + "," + str(raj) + "," +\
-               str(decj) + "," + str(p0) +  "," + str(dm) +\
-               ',' + str(this.refsep)
-}
+        return this.sourceName + "," + raj + "," +
+               decj + "," + p0 +  "," + dm +
+               ',' + this.refsep;
+    }
+        
         // ***************************************************
+    
+    
+    
+}
+    
+    
