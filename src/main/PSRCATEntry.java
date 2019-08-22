@@ -1,4 +1,4 @@
-package src.main; 
+package main;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 //public class PSRCATEntry {
 //
 //}
- 
+
 
 //
 //***********************************************************
@@ -44,10 +44,14 @@ import java.util.Map;
 import com.ibm.icu.impl.CalendarAstronomer;
 import com.ibm.icu.impl.CalendarAstronomer.Ecliptic;
 
+import org.python.util.PythonInterpreter;
+import org.python.core.*;
+
+
 //from astropy.coordinates import SkyCoord
 //import SkyCoord;
 
-// ****************************** 
+// ******************************
 //
 // CLASS DEFINITION
 //
@@ -57,11 +61,12 @@ public class PSRCATEntry {
 
 	
 	//String[] sourceParameters;
+	static PythonInterpreter interp = new PythonInterpreter();
 	Map<String, String> sourceParameters= new HashMap<String, String>();
     String sourceName;
     String JName;
     String BName;
-    double refsep;
+    double refsep; 
     String coord;
 
     String KEY_PSRJ;
@@ -120,6 +125,8 @@ public class PSRCATEntry {
 	 */
     public PSRCATEntry(String name) {
 
+    	interp.exec("import ephem");
+    	interp.exec("from astropy.coordinates import SkyCoord");
         // Store source details. The 'sourceParameters' 
         // dictionary in particular, stores information
         // collected from the ATNF file, as key-value
@@ -186,7 +193,7 @@ public class PSRCATEntry {
         the three accompanying values as parameters in a 
         simple list object.
 
-        Parameters
+        Parameters 
         ----------
         :param line_from_file: the line of text from the
             pulsar catalog file.
@@ -451,7 +458,7 @@ public class PSRCATEntry {
         it computes the galactic longitude and latitude 
         using the RAJ and DECJ, if longitude or latitude are
         missing.
-
+        
         Parameters
         ----------
 
@@ -491,7 +498,7 @@ public class PSRCATEntry {
         21.4088
 
         */
-
+    	
     	CalendarAstronomer calendarAstronomer;
     	
         if (RA.equals("00:00:00") && DEC.equals("00:00:00")) 
@@ -508,17 +515,28 @@ public class PSRCATEntry {
 
                 // Use pyephem to convert from ecliptic 
                 // to Equatorial coordinates...
-            	ec = calendarAstronomer.eclipticToEquatorial(new Ecliptic(EB, EL));
-            	//new Ecliptic(lat, lon) // zamiana na galactic TODO
-            	gal = calendarAstronomer.equa;
-                Equatorial eq;
-            	eq.
-            	Ecliptic ecli;
-            	ecli.
+            	
+            	
+            	
+            	//ec = calendarAstronomer.eclipticToEquatorial(new Ecliptic(EB, EL));
+            	//new Ecliptic(lat, lon)
+//            	gal = calendarAstronomer.equa;
+//                Equatorial eq;
+//            	eq.
+//            	Ecliptic ecli;
+//            	ecli.
             	//ec = atan2((cos))
-                ec = ephem.Ecliptic(EL, EB, epoch='2000');
-                RA = str(ec.to_radec()[0]);
-                DEC = str(ec.to_radec()[1]);
+            	interp.set("EL", EL);
+            	interp.set("EB", EB);
+            	interp.exec("ec = ephem.Ecliptic(EL, EB, epoch='2000')");
+            	interp.exec("RA = str(ec.to_radec()[0])");
+            	interp.exec(" DEC = str(ec.to_radec()[1])");
+            	
+            	RA = interp.get("RA").asString();
+            	DEC = interp.get("DEC").asString();
+                //ec = ephem.Ecliptic(EL, EB, epoch='2000'); 
+                //RA = str(ec.to_radec()[0]);
+                //DEC = str(ec.to_radec()[1]);
 
                 // Since we can't just convert from RA and 
                 // DEC, to GL and GB in pyephem, we instead 
@@ -526,11 +544,11 @@ public class PSRCATEntry {
                 // that we first do some daft parsing of the 
                 // string into pieces, then reform it in to 
                 // the format required by astropy...
-                RA_COMPS = RA.split(":");
-                DEC_COMPS = DEC.split(":");
+                String[] RA_COMPS = RA.split(":");
+                String[] DEC_COMPS = DEC.split(":");
 
                 // Now reform the text into astropy format...
-                coordinateString = RA_COMPS[0] + "h" +
+                String coordinateString = RA_COMPS[0] + "h" +
                                    RA_COMPS[1] + "m" +
                                    RA_COMPS[2] + "s " +
                                    DEC_COMPS[0] + "d" +
@@ -538,19 +556,24 @@ public class PSRCATEntry {
                                    DEC_COMPS[2] + "s";
 
                 // Now get galactic coordinates.
-                GL, GB = str(SkyCoord(coordinateString).galactic.to_string()).split();
+                interp.set("coordinateStr", coordinateString);
+                interp.exec("GL, GB = str(SkyCoord(coordinateString).galactic.to_string()).split()");
+                String GL = interp.get("GL").asString();
+                String GB = interp.get("GB").asString();
+                
+                //GL, GB = str(SkyCoord(coordinateString).galactic.to_string()).split();
 
-                return [RA, DEC, GL, GB];
+                return new String[] {RA, DEC, EL, EB};
             }
         
         if(EL.equals("0") && EB.equals("0")) {
 
             // No EL and EB provided.
-            if(RA.equals("00:00:00") && DEC.equals("00:00:00"){
+            if(RA.equals("00:00:00") && DEC.equals("00:00:00")){
 
                 // Here just return the inputs, since we 
                 // can't convert...
-                return [RA, DEC, EL, EB];
+                return new String[] {RA, DEC, EL, EB};
             }
 
             else {
@@ -560,11 +583,11 @@ public class PSRCATEntry {
                 // that we first do some daft parsing of the
                 // string into pieces, then reform it in to
                 // the format required by astropy...
-                RA_COMPS = this.checkFormatEquatorialCoordinate(RA).split(":");
-                DEC_COMPS = this.checkFormatEquatorialCoordinate(DEC).split(":");
+                String[] RA_COMPS = RA.split(":");
+                String[] DEC_COMPS = DEC.split(":");
 
                 // Now reform the text into astropy format...
-                coordinateString = RA_COMPS[0] + "h" + 
+                String coordinateString = RA_COMPS[0] + "h" + 
                                    RA_COMPS[1] + "m" + 
                                    RA_COMPS[2] + "s " + 
                                    DEC_COMPS[0] + "d" + 
@@ -572,13 +595,17 @@ public class PSRCATEntry {
                                    DEC_COMPS[2] + "s";
 
                 // Now get galactic coordinates.
-                GL, GB = str(SkyCoord(coordinateString).galactic.to_string()).split();
+                interp.set("coordinateStr", coordinateString);
+                interp.exec("GL, GB = str(SkyCoord(coordinateString).galactic.to_string()).split()");
+                String GL = interp.get("GL").asString();
+                String GB = interp.get("GB").asString();
+                //GL, GB = str(SkyCoord(coordinateString).galactic.to_string()).split();
 
-                return [RA, DEC, GL, GB];
+                return new String[] {RA, DEC, EL, EB};
             }
         }
 
-        return [RA, DEC, EL, EB];
+        return new String[] {RA, DEC, EL, EB};
     }
     // *****************************************************
 
@@ -649,9 +676,11 @@ public class PSRCATEntry {
         		
        
     }
+    
+    
     // ******************************************************
 
-    public float getRefSep() {
+    public double getRefSep() {
         /*
         Computes the angular separation between this 
         PSRCATEntry object, and a reference point at 
@@ -695,17 +724,30 @@ public class PSRCATEntry {
                   'd' + DEC_Components[1] + 
                   'm' + DEC_Components[2] + 's';
 
-            this.coord = SkyCoord(RAJ, DEC, frame = "fk5");
-            ref = SkyCoord("0h0m0s", "0d0m0s", frame = "fk5");
+            
+            interp.set("RAJ", RAJ);
+            interp.set("DEC", DEC);
+            
+            interp.exec("coord = SkyCoord(RAJ, DEC, frame = \"fk5\")");
+            interp.exec("ref = SkyCoord(\"0h0m0s\", \"0d0m0s\", frame = \"fk5\")");
+            interp.exec("refsep = this.coord.separation(ref).arcsecond / 3600;");
+            
+            coord = interp.get("coord").asString();
+            refsep =  interp.get("refsep").asDouble();
+            
+            
+            
 
             // Convert to degrees by dividing by 3,600
-            this.refsep = this.coord.separation(ref).arcsecond / 3600;
+            //refsep = this.coord.separation(ref).arcsecond / 3600;
         }
-        return this.refsep;
+        return refsep;
     }
+    
+    
     // ******************************************************
 
-    public float calcsep(coord) {
+    public double calcsep(String coord) {
         /*
         Computes the angular separation between this 
         PSRCATEntry object, and a reference point described 
@@ -739,7 +781,11 @@ public class PSRCATEntry {
         if (coord != null){
 
             if(this.coord != null) {
-                sep = this.coord.separation(coord).arcsecond / 3600;
+            	interp.set("coord", coord);
+            	interp.exec("sep = this.coord.separation(coord).arcsecond / 3600;");
+                double sep = interp.get("sep").asDouble();
+            	
+            	//sep = this.coord.separation(coord).arcsecond / 3600;
                 return sep;
             }
             else
@@ -755,6 +801,13 @@ public class PSRCATEntry {
 
     // ******************************************************
 
+    
+    
+    
+    
+    
+    
+    
     public String __str__() {
         /*
         Overridden method that provides a neater string 
