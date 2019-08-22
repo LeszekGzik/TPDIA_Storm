@@ -1,4 +1,4 @@
-package bolts;
+package main;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,7 +7,8 @@ import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-import org.apache.commons.lang.SerializationUtils;
+
+//import org.apache.commons.lang.SerializationUtils;
 
 //public class PSRCATParser {
 //
@@ -40,7 +41,7 @@ import org.apache.commons.lang.SerializationUtils;
  above in derivative works, would be very much appreciated.
 ************************************************************
 */
-import spouts.PSRCATEntry;
+import main.PSRCATEntry;
 // ******************************
 //
 // CLASS DEFINITION
@@ -52,7 +53,7 @@ public class PSRCATParser{
     //Parses an ATNF pulsar catalog database file.
     
 
-    // ******************************
+    // ****************************** 
     //
     // Methods
     //

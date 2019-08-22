@@ -1,4 +1,4 @@
-package spouts;
+package src.main; 
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 //public class PSRCATEntry {
 //
 //}
-
+ 
 
 //
 //***********************************************************
@@ -47,7 +47,7 @@ import com.ibm.icu.impl.CalendarAstronomer.Ecliptic;
 //from astropy.coordinates import SkyCoord
 //import SkyCoord;
 
-// ******************************
+// ****************************** 
 //
 // CLASS DEFINITION
 //
@@ -509,7 +509,7 @@ public class PSRCATEntry {
                 // Use pyephem to convert from ecliptic 
                 // to Equatorial coordinates...
             	ec = calendarAstronomer.eclipticToEquatorial(new Ecliptic(EB, EL));
-            	//new Ecliptic(lat, lon)
+            	//new Ecliptic(lat, lon) // zamiana na galactic TODO
             	gal = calendarAstronomer.equa;
                 Equatorial eq;
             	eq.
