@@ -234,7 +234,7 @@ public class PSRCATEntry {
 
         // The values should form the remainder of the string
         // list, minus the key.
-        String[] value;
+        String[] value = {};
         System.arraycopy(sub_strings, 1, value, 0, sub_strings.length - 1);
         // Now check the key value, and do some pre-processing 
         // according to the key. This is required as the ATNF 
