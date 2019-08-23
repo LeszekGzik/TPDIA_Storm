@@ -42,10 +42,7 @@ import java.util.Map;
 //import ephem;
 
 import com.ibm.icu.impl.CalendarAstronomer;
-import com.ibm.icu.impl.CalendarAstronomer.Ecliptic;
-
 import org.python.util.PythonInterpreter;
-import org.python.core.*;
 
 
 //from astropy.coordinates import SkyCoord

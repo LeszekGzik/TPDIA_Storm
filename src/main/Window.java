@@ -3,7 +3,6 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 
-/** I znowu nie wiem czy contents powinno byæ Float czy Int */
 public class Window {
 
 	int wMax, defaultWMax;
@@ -15,7 +14,6 @@ public class Window {
 	Float windowMean;
 	Float windowVar;
 	int observed;
-	//Float index;
 	Float overallSum, overallMean, overallVar, overallM2;
 	
 	public Window(int maxSize, Float conf) {

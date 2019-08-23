@@ -19,7 +19,6 @@ public class Matcher {
 		return divideAndConquerSearch(0, knownsources.size(), candidate, knownsources);
 	}
 	
-	/* PSRCATEntry = placeholder */
 	public int divideAndConquerSearch(int start, int end, PSRCATEntry candidate, List<PSRCATEntry> knownsources) {
 		if(end - start == 2) {
 			return start+1;
@@ -94,7 +93,6 @@ public class Matcher {
 		String candDM = candidate.get_parameter("DM");
 		String candName = candidate.sourceName;
 		
-		/* co to kurwa za dziwne zmiany z liczb na stringi, jebaæ Pythona */
 		if(candPO==null) {
 			candPO = "0.0";
 		}
@@ -111,7 +109,6 @@ public class Matcher {
 			for(int i=0; i<harmonics.length; i++) {
 				if(!ksPO.equals("*")) {
 					
-					//?????!!?
 					boolean searchCond = (Float.parseFloat(candPO) > Float.parseFloat(ksPO)*harmonics[i] - acc)
 							&& (Float.parseFloat(candPO) < Float.parseFloat(ksPO)*harmonics[i] + acc);
 					if((!candDM.equals("unknown")) &&  (!candDM.equals("*")) && (!ksDM.equals("unknown")) && (!candDM.equals("*"))) {
