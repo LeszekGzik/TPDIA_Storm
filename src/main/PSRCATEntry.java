@@ -802,12 +802,6 @@ public class PSRCATEntry {
     // ******************************************************
 
     
-    
-    
-    
-    
-    
-    
     public String __str__() {
         /*
         Overridden method that provides a neater string 
