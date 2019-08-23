@@ -1,9 +1,7 @@
-package main;
+package model;
 
 import java.io.*;
 import java.util.List;
-
-import javax.xml.transform.Source;
 
 public class Matcher {
 	Float[] harmonics = {1.0f, 0.5f, 0.3f, 0.25f, 0.2f, 0.16f, 0.125f, 0.0625f, 0.03125f};
@@ -17,12 +15,11 @@ public class Matcher {
 		outputFile = output;
 	}
 	
-	public int findSearchIndex(Source candidate, List<Source> knownsources) {
+	public int findSearchIndex(PSRCATEntry candidate, List<PSRCATEntry> knownsources) {
 		return divideAndConquerSearch(0, knownsources.size(), candidate, knownsources);
 	}
 	
-	/* Source = placeholder */
-	public int divideAndConquerSearch(int start, int end, Source candidate, List<Source> knownsources) {
+	public int divideAndConquerSearch(int start, int end, PSRCATEntry candidate, List<PSRCATEntry> knownsources) {
 		if(end - start == 2) {
 			return start+1;
 		}
@@ -31,8 +28,8 @@ public class Matcher {
 		}
 		
 		int midpoint = (int)(Math.ceil(((double)end + (double)start))/2);
-		Source sourceAtMidpoint = knownsources.get(midpoint);
-		int knownSourceSortAttribute = sourceAtMidpoint.refstep; //placeholder
+		PSRCATEntry sourceAtMidpoint = knownsources.get(midpoint);
+		double knownSourceSortAttribute = sourceAtMidpoint.refsep;
 		
 		if (candidate.refsep < knownSourceSortAttribute) {
 			return divideAndConquerSearch(start,midpoint,candidate,knownsources);
@@ -45,10 +42,9 @@ public class Matcher {
 		}
 	}
 	
-	/* Source = placeholder */
-	public void compare(Source candidate, List<Source> knownsources, int index, float maxSep) {
-		Source knownSource = knownsources.get(index);
-		float sourceSep = (float)(candidate.calcstep(knownSource.coord));
+	public void compare(PSRCATEntry candidate, List<PSRCATEntry> knownsources, int index, float maxSep) {
+		PSRCATEntry knownSource = knownsources.get(index);
+		float sourceSep = (float)(candidate.calcsep(knownSource.coord));
 		
 		if(sourceSep <= 2*maxSep) {
 			compareToKnownSource(candidate,knownSource,sourceSep);
@@ -57,10 +53,10 @@ public class Matcher {
 		}
 	}
 	
-	public void compareRight(Source candidate, List<Source> knownsources, int index, float maxSep) {
+	public void compareRight(PSRCATEntry candidate, List<PSRCATEntry> knownsources, int index, float maxSep) {
 		if((index + 1 < knownsources.size()) && (index+1 > -1)) {
-			Source knownSource = knownsources.get(index + 1);
-			float sourceSep = (float)(candidate.calcstep(knownSource.coord));
+			PSRCATEntry knownSource = knownsources.get(index + 1);
+			float sourceSep = (float)(candidate.calcsep(knownSource.coord));
 			if(sourceSep <= 2*maxSep) {
 				compareToKnownSource(candidate,knownSource,sourceSep);
 				compareRight(candidate, knownsources, index, maxSep);
@@ -68,10 +64,10 @@ public class Matcher {
 		}
 	}
 	
-	public void compareLeft(Source candidate, List<Source> knownsources, int index, float maxSep) {
+	public void compareLeft(PSRCATEntry candidate, List<PSRCATEntry> knownsources, int index, float maxSep) {
 		if((index - 1 < knownsources.size()) && (index-1 > -1)) {
-			Source knownSource = knownsources.get(index + 1);
-			float sourceSep = (float)(candidate.calcstep(knownSource.coord));
+			PSRCATEntry knownSource = knownsources.get(index + 1);
+			float sourceSep = (float)(candidate.calcsep(knownSource.coord));
 			if(sourceSep <= 2*maxSep) {
 				compareToKnownSource(candidate,knownSource,sourceSep);
 				compareLeft(candidate, knownsources, index, maxSep);
@@ -79,25 +75,24 @@ public class Matcher {
 		}
 	}
 	
-	public void compareToKnownSource(Source candidate, Source knownSource, float maxSep) {
+	public void compareToKnownSource(PSRCATEntry candidate, PSRCATEntry knownSource, float maxSep) {
 		totalComparisons++;
-		String ksPO = knownSource.getParameter("PO");
-		String ksRA = knownSource.getParameter("RAJ");
-		String ksDEC = knownSource.getParameter("DEC");
-		String ksDM = knownSource.getParameter("DM");
+		String ksPO = knownSource.get_parameter("PO");
+		String ksRA = knownSource.get_parameter("RAJ");
+		String ksDEC = knownSource.get_parameter("DEC");
+		String ksDM = knownSource.get_parameter("DM");
 		String ksName = knownSource.sourceName;
 		
 		if(ksDM==null) {
 			ksDM = "*";
 		}
 		
-		String candPO = candidate.getParameter("PO");
-		String candRA = candidate.getParameter("RAJ");
-		String candDEC = candidate.getParameter("DEC");
-		String candDM = candidate.getParameter("DM");
+		String candPO = candidate.get_parameter("PO");
+		String candRA = candidate.get_parameter("RAJ");
+		String candDEC = candidate.get_parameter("DEC");
+		String candDM = candidate.get_parameter("DM");
 		String candName = candidate.sourceName;
 		
-		/* co to kurwa za dziwne zmiany z liczb na stringi, jebaæ Pythona */
 		if(candPO==null) {
 			candPO = "0.0";
 		}
@@ -114,7 +109,6 @@ public class Matcher {
 			for(int i=0; i<harmonics.length; i++) {
 				if(!ksPO.equals("*")) {
 					
-					//?????!!?
 					boolean searchCond = (Float.parseFloat(candPO) > Float.parseFloat(ksPO)*harmonics[i] - acc)
 							&& (Float.parseFloat(candPO) < Float.parseFloat(ksPO)*harmonics[i] + acc);
 					if((!candDM.equals("unknown")) &&  (!candDM.equals("*")) && (!ksDM.equals("unknown")) && (!candDM.equals("*"))) {
