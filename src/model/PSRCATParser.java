@@ -1,4 +1,4 @@
-package main;
+package model;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,46 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-
-//import org.apache.commons.lang.SerializationUtils;
-
-//public class PSRCATParser {
-//
-//}
-
-/*
-************************************************************
-
- PSRCATParser.py
-
-************************************************************
- Description:
-
- Parses an ANTF pulsar catalog file.
-
-************************************************************
- Author: Rob Lyon
- Email : robert.lyon@manchester.ac.uk
- web   : www.scienceguyrob.com
-************************************************************
- License:
-
- Code made available under the GPLv3 (GNU General Public
- License), that allows you to copy, modify and redistribute
- the code as you see fit:
-
- http://www.gnu.org/copyleft/gpl.html
-
- Though a mention to the original author using the citation
- above in derivative works, would be very much appreciated.
-************************************************************
-*/
-import main.PSRCATEntry;
-// ******************************
-//
-// CLASS DEFINITION
-//
-// ******************************
+import model.PSRCATEntry;
 
 public class PSRCATParser{
    

@@ -1,4 +1,4 @@
-package main;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,7 +64,6 @@ public class Window {
 		
 	}
 
-	//?????
 	private boolean hasChanged() {
 		return false;
 	}
