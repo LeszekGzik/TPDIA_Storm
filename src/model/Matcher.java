@@ -147,4 +147,20 @@ public class Matcher {
 			
 		}
 	}
+
+	public int getPossibleMatches() {
+		return possibleMatches;
+	}
+
+	public void setPossibleMatches(int possibleMatches) {
+		this.possibleMatches = possibleMatches;
+	}
+
+	public int getTotalComparisons() {
+		return totalComparisons;
+	}
+
+	public void setTotalComparisons(int totalComparisons) {
+		this.totalComparisons = totalComparisons;
+	}
 }
