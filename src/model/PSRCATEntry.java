@@ -123,7 +123,8 @@ public class PSRCATEntry {
     public PSRCATEntry(String name) {
 
     	interp.exec("import ephem");
-    	interp.exec("from astropy.coordinates import SkyCoord");
+    	//interp.exec("from astropy.coordinates import SkyCoord");
+    	
         // Store source details. The 'sourceParameters' 
         // dictionary in particular, stores information
         // collected from the ATNF file, as key-value
@@ -231,7 +232,7 @@ public class PSRCATEntry {
 
         // The values should form the remainder of the string
         // list, minus the key.
-        String[] value = {};
+        String[] value = new String[sub_strings.length-1];
         System.arraycopy(sub_strings, 1, value, 0, sub_strings.length - 1);
         // Now check the key value, and do some pre-processing 
         // according to the key. This is required as the ATNF 
@@ -244,15 +245,13 @@ public class PSRCATEntry {
             this.sourceName = value[0];
             this.JName = value[0];
         }
-        else {
-        	if(key.equals(this.KEY_PSRB)) {
+        else if(key.equals(this.KEY_PSRB)) {
        		 	this.sourceName = value[0];
        		 	this.BName = value[0];
-        	}
         }
         
         // If the text contains the right ascension (RA).
-        if (key.equals(this.KEY_RAJ)) {
+        else if (key.equals(this.KEY_RAJ)) {
 
             // Get the RAJ. It should be in the format:
             // 00:00:00.00
@@ -282,27 +281,26 @@ public class PSRCATEntry {
 
                     raj += ":00:00";  // Add mm:ss parts.
                     value[0] = raj;
-                    sourceParameters.put(key, value.toString());
+                    sourceParameters.put(key, raj);
                     //this.sourceParameters[key] = value;
                 }
                 else {
                 	if(length == 2) {
                 		raj += ":00";  // Add ss parts.
                         value[0] = raj;
-                        sourceParameters.put(key, value.toString());
+                        sourceParameters.put(key, raj);
                         //this.sourceParameters[key] = value;
                 	}
                 }
             }       
             else {
-            	sourceParameters.put(key, value.toString());
+            	sourceParameters.put(key, raj);
             	//this.sourceParameters[key] = value;
             }
                 
         // If the text contains declination (DEC).
         }
-        else {
-        	if(key.equals(this.KEY_DECJ)) {
+        else if(key.equals(this.KEY_DECJ)) {
         		
             // Get the DEC. It should be in the format:
             // +00:00:00.00 or -00:00:00.00
@@ -331,7 +329,7 @@ public class PSRCATEntry {
 
                     decj += ":00:00";  // Add mm:ss parts.
                     value[0] = decj;
-                    sourceParameters.put(key, value.toString());
+                    sourceParameters.put(key, decj);
                     //this.sourceParameters[key] = value;
 
                 }
@@ -339,105 +337,99 @@ public class PSRCATEntry {
                 	if (length == 2) {
                 		decj += ":00";  // Add ss parts.
                 		value[0] = decj;
-                		sourceParameters.put(key, value.toString());
+                		sourceParameters.put(key, decj);
                 		//this.sourceParameters[key] = value;
                 	}
             }
             else
             {
-            	sourceParameters.put(key, value.toString());
+            	sourceParameters.put(key, decj);
                 //this.sourceParameters[key] = value;
             }	
             
         	}
-        }
         // P0 is the period in seconds.
-       	if(key.equals(this.KEY_P0)) {
-
-       		// Here frequency is automatically computed from
-       		// the period.
-
-       		if(Double.valueOf(value[0]) == 0)
-       		{
-       			sourceParameters.put(key, value.toString());
-       			sourceParameters.put(KEY_F0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
-       			//this.sourceParameters[key] = value;
-       			//this.sourceParameters[this.KEY_F0] =[str(float(1.0) / float(value[0]))];
-       		}else
-        	{
-
-                // This error will only occur if period is 
-                // zero - which it shouldn't be.
-        		sourceParameters.put(key, "1.0");
-        		sourceParameters.put(KEY_F0, "1.0");
-                //this.sourceParameters[key] = ['1.0'];
-                //this.sourceParameters[this.KEY_F0] = ['1.0'];
-        	}
-        	
-        }
-        else
-        {
-        	if(key.equals(KEY_F0)) {  // F0 is the frequency in Hz.
-        	// Here period is automatically computed from 
-        	// the frequency.
-        		if(Double.valueOf(value[0]) == 0){
-        			sourceParameters.put(key, value.toString());
-        			sourceParameters.put(KEY_P0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
-//        			this.sourceParameters[key] = value;
-//        			this.sourceParameters[this.KEY_P0] =[str(float(1.0) / float(value[0]))];
-        		}
-        		else
-        		{
-        			// This error will only occur if frequency 
-        			// is zero - which it shouldn't be.
-        			sourceParameters.put(key, "1.0");
-        			sourceParameters.put(KEY_F0, "1.0");
-//        			this.sourceParameters[key] = ['1.0'];
-//        			this.sourceParameters[this.KEY_F0] = ['1.0'];
-        		}
-        	}
-        }
-       
-        if(key.equals(this.KEY_ELONG)) {  // Ecliptic longitude
-        	sourceParameters.put(key, value.toString());
-        }
+	    else if(key.equals(this.KEY_P0)) {
+	   		// Here frequency is automatically computed from
+	   		// the period.
+	
+	   		if(Double.valueOf(value[0]) == 0)
+	   		{
+	   			sourceParameters.put(key, value.toString());
+	   			sourceParameters.put(KEY_F0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
+	   			//this.sourceParameters[key] = value;
+	   			//this.sourceParameters[this.KEY_F0] =[str(float(1.0) / float(value[0]))];
+	   		}
+	   		else {
+	
+	            // This error will only occur if period is 
+	            // zero - which it shouldn't be.
+	    		sourceParameters.put(key, "1.0");
+	    		sourceParameters.put(KEY_F0, "1.0");
+	            //this.sourceParameters[key] = ['1.0'];
+	            //this.sourceParameters[this.KEY_F0] = ['1.0'];
+	    	}
+	    	
+	    }
+	    else if(key.equals(KEY_F0)) {  // F0 is the frequency in Hz.
+	    	// Here period is automatically computed from 
+	    	// the frequency.
+			if(Double.valueOf(value[0]) == 0){
+				sourceParameters.put(key, value.toString());
+				sourceParameters.put(KEY_P0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
+	//        			this.sourceParameters[key] = value;
+	//        			this.sourceParameters[this.KEY_P0] =[str(float(1.0) / float(value[0]))];
+			}
+			else
+			{
+				// This error will only occur if frequency 
+				// is zero - which it shouldn't be.
+				sourceParameters.put(key, "1.0");
+				sourceParameters.put(KEY_F0, "1.0");
+	//        			this.sourceParameters[key] = ['1.0'];
+	//        			this.sourceParameters[this.KEY_F0] = ['1.0'];
+			}
+		}
+	    else if(key.equals(this.KEY_ELONG)) {  // Ecliptic longitude
+	    	sourceParameters.put(key, value.toString());
+	    }
         
-        if(key.equals(this.KEY_ELAT))   // Ecliptic latitude
-        {
-        	sourceParameters.put(key, value.toString());
-        }
-        else
-        {
-            // No matter what, we add any other parameter 
-            // we find to the parameters dictionary
-        	sourceParameters.put(key, value.toString());
-        }
-        // Check the coordinates stored are correct, and 
-        // update them as appropriate.
-        String ra = this.get_parameter(this.KEY_RAJ);
-        String dec = this.get_parameter(this.KEY_DECJ);
-        String elong = this.get_parameter(this.KEY_ELONG);
-        String elat = this.get_parameter(this.KEY_ELAT);
-
-        // If no RA or DEC are supplied, then elong and 
-        // elat must have been provided instead. This is 
-        // due to the nature of the ATNF catalog file (this
-        // is empirically observed to be the case).
-        if (ra == null && dec == null && elong != null && elat != null) {
-            String[] corrected_coords = this.checkCoords("00:00:00","00:00:00", elong, elat);
-            // corrected_coords = [ra, dec, elong, elat]
-            sourceParameters.put(KEY_RAJ, corrected_coords[0]);
-            sourceParameters.put(KEY_DECJ, corrected_coords[1]);
-//            this.sourceParameters[this.KEY_RAJ] = [corrected_coords[0]]
-//            this.sourceParameters[this.KEY_DECJ] = [corrected_coords[1]]
-        }
-        // Return true, assuming there have been no errors.
-        // It would be better to check that values have been 
-        // correctly set in the parameters dictionary, but I 
-        // don't currently have the time to implement such 
-        // detailed checks.
-        return true;
-    }
+	    else if(key.equals(this.KEY_ELAT))   // Ecliptic latitude
+	    {
+	    	sourceParameters.put(key, value.toString());
+	    }
+	    else
+	    {
+	        // No matter what, we add any other parameter 
+	        // we find to the parameters dictionary
+	    	sourceParameters.put(key, value.toString());
+	    }
+	    // Check the coordinates stored are correct, and 
+	    // update them as appropriate.
+	    String ra = this.get_parameter(this.KEY_RAJ);
+	    String dec = this.get_parameter(this.KEY_DECJ);
+	    String elong = this.get_parameter(this.KEY_ELONG);
+	    String elat = this.get_parameter(this.KEY_ELAT);
+	
+	    // If no RA or DEC are supplied, then elong and 
+	    // elat must have been provided instead. This is 
+	    // due to the nature of the ATNF catalog file (this
+	    // is empirically observed to be the case).
+	    if (ra == null && dec == null && elong != null && elat != null) {
+	        String[] corrected_coords = this.checkCoords("00:00:00","00:00:00", elong, elat);
+	        // corrected_coords = [ra, dec, elong, elat]
+	        sourceParameters.put(KEY_RAJ, corrected_coords[0]);
+	        sourceParameters.put(KEY_DECJ, corrected_coords[1]);
+	//            this.sourceParameters[this.KEY_RAJ] = [corrected_coords[0]]
+	//            this.sourceParameters[this.KEY_DECJ] = [corrected_coords[1]]
+	    }
+	    // Return true, assuming there have been no errors.
+	    // It would be better to check that values have been 
+	    // correctly set in the parameters dictionary, but I 
+	    // don't currently have the time to implement such 
+	    // detailed checks.
+	    return true;
+	}
     // ******************************************************
 
     
