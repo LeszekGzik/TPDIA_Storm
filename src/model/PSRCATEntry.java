@@ -837,6 +837,14 @@ public class PSRCATEntry {
                decj + "," + p0 +  "," + dm +
                ',' + this.refsep;
     }
+    
+    public String getName() {
+    	return sourceName;
+    }
+    
+    public void setRefSep(double _refSep) {
+    	refsep = _refSep;
+    }
         
         // ***************************************************
     

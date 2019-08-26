@@ -11,6 +11,14 @@ public class Matcher {
 	int possibleMatches = 0;
 	int totalComparisons = 0;
 	
+	public void setAccuracy(float _acc) {
+		accuracy = _acc;
+	}
+	
+	public void setDMPercentAccuracy(float _acc) {
+		DMPercentAccuracy = _acc;
+	}
+	
 	public Matcher(String output) {
 		outputFile = output;
 	}

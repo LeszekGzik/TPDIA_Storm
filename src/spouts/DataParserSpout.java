@@ -44,7 +44,7 @@ public class DataParserSpout implements IRichSpout {
 		//collector.emit
 		
 		for(Iterator<PSRCATEntry> i = candidateList.iterator(); i.hasNext();) {
-			collector.emit(i.next());
+			//collector.emit(i.next());
 		}
 		
 //		for(int i=0; i<10; i++) {
