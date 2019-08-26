@@ -5,10 +5,20 @@ import backtype.storm.LocalCluster;
 import backtype.storm.topology.TopologyBuilder;
 import bolts.NodeSiftingBolt;
 import spouts.RandomNumberSpout;
+import test.KnownSourceMatcherTest;
+import test.MatchingAccuracyTest;
 
 public class TPDIAStorm {
 
 	public static void main(String[] args) {
+		
+		
+		//MatchingAccuracyTest mat = new MatchingAccuracyTest();
+		//mat.main(args);
+		KnownSourceMatcherTest.Main();
+		
+		System.out.println("TEST END");
+		
 		Config config = new Config();
 		config.setDebug(true);
 		config.put(Config.TOPOLOGY_MAX_SPOUT_PENDING, 1);
