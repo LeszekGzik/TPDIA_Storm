@@ -58,7 +58,7 @@ import model.PSRCATEntry;
 
 public class KnownSourceMatcherTest {
 
-	public static void Main() {
+	public static void main(String args[]) {
 		
 		// Clean workspace (removes previously downloaded catalogs).
 		
