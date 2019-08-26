@@ -2,7 +2,8 @@ package test;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.*;
+import model.PSRCATEntry;
+import model.Matcher;
 
 public class MatchingAccuracyTest {
 

@@ -44,6 +44,7 @@ public class Window {
 		if(canGrow()) {
 			contents.add(x);
 			length++;
+			updateStats(x, false);
 		}
 		else {
 			removeOldest();
@@ -71,17 +72,17 @@ public class Window {
 	private void updateStats(int x, boolean remove) {
 		if(observed > 2) {
 			if(remove) {
-			windowSum -= x;
-			windowMean = windowSum / (float)length;
-			//windowVar = WARIANCJA Z LISTY "contents", TODO
+				windowSum -= x;
+				windowMean = windowSum / (float)length;
+				windowVar = calculateVariance();
 			}
 			else {
 				windowSum += x;
 				windowMean = windowSum / (float)length;
-				//windowVar = JAK WY¯EJ, TODO
+				windowVar = calculateVariance();
 				overallSum += x;
 				delta = (float)x - overallMean;
-				overallMean += delta * ((float)x - overallMean);
+				overallMean += delta / (float)observed;
 				overallM2 += delta * ((float)x - overallMean);
 				overallVar = overallM2 / (float)(observed-1);
 			}
@@ -91,6 +92,16 @@ public class Window {
 			overallSum += x;
 		}
 	}
+	
+	private float calculateVariance() {
+		float var = 0.0f;
+		float temp;
+		for(int i=0; i<contents.size(); i++) {
+			temp = (float)contents.get(i) - windowMean;
+			var += temp*temp;
+		}
+		return var/(float)length;
+	}
 
 	private void removeOldest() {
 		if(length>0) {
@@ -98,7 +109,6 @@ public class Window {
 			length--;
 			updateStats(oldest, true);
 		}
-		
 	}
 
 	private boolean canGrow() {
@@ -133,5 +143,15 @@ public class Window {
 	
 	public void printWindow() {
 		System.out.println(contents);
+	}
+	
+	public int count(Integer num) {
+		int occurances = 0;
+		for(int i : contents) {
+			if(num.equals(i)) {
+				occurances++;
+			}
+		}
+		return occurances;
 	}
 }
