@@ -15,7 +15,7 @@ public class TPDIAStorm {
 		
 		//MatchingAccuracyTest mat = new MatchingAccuracyTest();
 		//mat.main(args);
-		KnownSourceMatcherTest.Main();
+		//KnownSourceMatcherTest.main();
 		
 		System.out.println("TEST END");
 		
