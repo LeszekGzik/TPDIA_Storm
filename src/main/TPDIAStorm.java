@@ -7,19 +7,20 @@ import bolts.NodeSiftingBolt;
 import spouts.RandomNumberSpout;
 import test.KnownSourceMatcherTest;
 import test.MatchingAccuracyTest;
+import test.NodeSiftTest;
+import test.WindowSiftTest;
 
 public class TPDIAStorm {
 
 	public static void main(String[] args) {
+		NodeSiftTest.main(args);
+		WindowSiftTest.main(args);
+		MatchingAccuracyTest.main(args);
 		
-		
-		//MatchingAccuracyTest mat = new MatchingAccuracyTest();
-		//mat.main(args);
-		//KnownSourceMatcherTest.main();
 		
 		System.out.println("TEST END");
 		
-		Config config = new Config();
+		/*Config config = new Config();
 		config.setDebug(true);
 		config.put(Config.TOPOLOGY_MAX_SPOUT_PENDING, 1);
 		
@@ -35,7 +36,7 @@ public class TPDIAStorm {
 		
 		}
 		
-		cluster.shutdown();
+		cluster.shutdown();*/
 
 	}
 
