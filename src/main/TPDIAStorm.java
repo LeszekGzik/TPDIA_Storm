@@ -17,7 +17,8 @@ public class TPDIAStorm {
 		WindowSiftTest.main(args);
 		MatchingAccuracyTest.main(args);
 		
-		
+		System.out.println("Interpreter created");
+		KnownSourceMatcherTest.main();
 		System.out.println("TEST END");
 		
 		/*Config config = new Config();
