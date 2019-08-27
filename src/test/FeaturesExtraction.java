@@ -2,6 +2,9 @@ package test;
 
 import java.util.Collections;
 import java.util.List;
+
+import org.python.util.PythonInterpreter;
+
 import java.lang.Math;
 
 /*
@@ -31,6 +34,7 @@ import java.lang.Math;
 
 public class FeaturesExtraction {
 
+	static PythonInterpreter interp = new PythonInterpreter();
 	/*
 	 * Extracts statistics from the values stored in the supplied data array.
 	 * 
@@ -159,8 +163,41 @@ public class FeaturesExtraction {
 	
 	
 	public void featureExtractionTest() {
-		//TODO
-		//reszta kodu
+
+		interp.exec("%pylab inline");
+		interp.exec("import matplotlib.pyplot as plt");
+		interp.exec("import numpy as np");
+		//First generate some random input data, representing individual candidates.
+		interp.exec("data = np.random.randint(low=1,high=11,size=1000)");
+		//Just plot the data to see what it looks like.
+		interp.exec("bin_centres = np.arange(0.5,10.5, 1)");
+		interp.exec("uniq, counts = np.unique(data, return_counts=True)");
+		interp.exec("plt.bar(bin_centres,counts)");
+		interp.exec("plt.ylabel('Frequency')");
+		interp.exec("plt.xlabel('Bin')");
+		interp.exec("plt.title('Distribution of random data')");
+		interp.exec("plt.show()");
+		
+		// In principle there are only 10 unique matches.
+		// No we can shuffle the data, e.g.
+		// np.random.shuffle(data)
+		// But we would rather sort it here, to simulate the ordering variable.
+		interp.exec("data = np.sort(data)");
+		
+		//First figure out true stats of data:
+		interp.exec("print 'Input data properties:'");
+		interp.exec("print 'Data mean: '    , np.mean(data)");
+		interp.exec("print 'Data STDEV: '   , np.std(data)");
+		interp.exec("print 'Data Skew: '    , skew(data)");
+		interp.exec("print 'Data Kurtosis: ', kurtosis(data), '\n'");
+		
+		interp.exec("extracted_features = extract_features(data)");
+		
+		interp.exec("print 'Extracted features:'");
+		interp.exec("print 'Data mean: '    , extracted_features[0]");
+		interp.exec("print 'Data STDEV: '   , extracted_features[1]");
+		interp.exec("print 'Data Skew: '    , extracted_features[2]");
+		interp.exec("print 'Data Kurtosis: ', extracted_features[3], '\n'");
 	}
 
 }
