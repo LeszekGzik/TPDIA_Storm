@@ -1,5 +1,8 @@
 package model;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,6 +45,10 @@ import java.util.Map;
 //import ephem;
 
 import com.ibm.icu.impl.CalendarAstronomer;
+
+import org.python.core.Py;
+import org.python.core.PyString;
+import org.python.core.PySystemState;
 import org.python.util.PythonInterpreter;
 
 
@@ -58,7 +65,12 @@ public class PSRCATEntry {
 
 	
 	//String[] sourceParameters;
-	static PythonInterpreter interp = new PythonInterpreter();
+	static PythonInterpreter interp = new PythonInterpreter(null, new PySystemState());
+	
+	//tu powinna byæ œcie¿ka do folderu z modu³ami
+	static String PyModulePath = "";
+	//tu powinna byæ œcie¿ka do Jythona
+	static String PyPath = "./lib/";
 	Map<String, String> sourceParameters= new HashMap<String, String>();
     String sourceName;
     String JName;
@@ -121,9 +133,17 @@ public class PSRCATEntry {
 	 * J0006+1834
 	 */
     public PSRCATEntry(String name) {
-
+    	try {
+    		BufferedReader br = new BufferedReader(new FileReader(new File("config.txt")));
+    		PyModulePath = br.readLine();
+    		br.close();
+    	} catch(Exception e) {}
+    	
+    	PySystemState sys = Py.getSystemState();
+    	sys.path.append(new PyString(PyPath));
+        sys.path.append(new PyString(PyModulePath));
     	interp.exec("import ephem");
-    	//interp.exec("from astropy.coordinates import SkyCoord");
+    	interp.exec("from astropy.coordinates import SkyCoord");
     	
         // Store source details. The 'sourceParameters' 
         // dictionary in particular, stores information

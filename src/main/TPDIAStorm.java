@@ -18,7 +18,7 @@ public class TPDIAStorm {
 		MatchingAccuracyTest.main(args);
 		
 		System.out.println("Interpreter created");
-		KnownSourceMatcherTest.main();
+		KnownSourceMatcherTest.main(args);
 		System.out.println("TEST END");
 		
 		/*Config config = new Config();
