@@ -55,21 +55,16 @@ public class MatchingAccuracyTest {
 		        test_cand_list.add(c);
 			}
 		}
-		System.out.println("Test candidate list entries: " + test_cand_list.size());
-		System.out.println(test_cand_list.get(0));
-		System.out.println(test_cand_list.get(1));
-		System.out.println(test_cand_list.get(2));
-		System.out.println(test_cand_list.get(test_cand_list.size()-1));
 		
 		Matcher tm = new Matcher("matching_output.txt");
 		tm.setAccuracy(1.0f);
 		tm.setDMPercentAccuracy(1.0f);
-		int totalMatches = 0;
 		for(PSRCATEntry c : test_cand_list) {
 			tm.compareToKnownSource(c, ks1, 1.0f);
-			totalMatches += tm.getPossibleMatches();
 		}
+		int totalMatches = tm.getPossibleMatches();
 		
+		System.out.println("Total number of candidates: " + test_cand_list.size());
 		System.out.println("Total matches: " + totalMatches);
 		System.out.println("Candidates filtered: " + (100-(float)totalMatches/test_cand_list.size()) + "%");
 	}

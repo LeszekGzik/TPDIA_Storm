@@ -371,6 +371,9 @@ public class PSRCATEntry {
 	    {
 	    	sourceParameters.put(key, value.toString());
 	    }
+	    else if(key.equals(this.KEY_DM)) {
+	    	sourceParameters.put(key, value[0].toString());
+	    }
 	    else
 	    {
 	        // No matter what, we add any other parameter 
