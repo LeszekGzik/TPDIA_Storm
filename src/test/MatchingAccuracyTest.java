@@ -65,9 +65,10 @@ public class MatchingAccuracyTest {
 		tm.setAccuracy(1.0f);
 		tm.setDMPercentAccuracy(1.0f);
 		int totalMatches = 0;
-		for(PSRCATEntry c : test_cand_list)
-		tm.compareToKnownSource(c, ks1, 1.0f);
-		totalMatches += tm.getPossibleMatches();
+		for(PSRCATEntry c : test_cand_list) {
+			tm.compareToKnownSource(c, ks1, 1.0f);
+			totalMatches += tm.getPossibleMatches();
+		}
 		
 		System.out.println("Total matches: " + totalMatches);
 		System.out.println("Candidates filtered: " + (100-(float)totalMatches/test_cand_list.size()) + "%");

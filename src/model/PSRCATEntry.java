@@ -747,7 +747,7 @@ public class PSRCATEntry {
 
             if(this.coord != null) {
             	
-            	double[] raDec = hMSandDMS2Deg(KEY_RAJ, KEY_DECJ);
+            	double[] raDec = hMSandDMS2Deg(sourceParameters.get(KEY_RAJ), sourceParameters.get(KEY_DECJ));
             	double[] raDecR = new double[] {};
             	raDecR[0] = Math.toRadians(raDec[0]);
             	raDecR[1] = Math.toRadians(raDec[1]);

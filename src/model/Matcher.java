@@ -85,9 +85,9 @@ public class Matcher {
 	
 	public void compareToKnownSource(PSRCATEntry candidate, PSRCATEntry knownSource, float maxSep) {
 		totalComparisons++;
-		String ksPO = knownSource.get_parameter("PO");
+		String ksPO = knownSource.get_parameter("P0");
 		String ksRA = knownSource.get_parameter("RAJ");
-		String ksDEC = knownSource.get_parameter("DEC");
+		String ksDEC = knownSource.get_parameter("DECJ");
 		String ksDM = knownSource.get_parameter("DM");
 		String ksName = knownSource.sourceName;
 		
@@ -95,9 +95,9 @@ public class Matcher {
 			ksDM = "*";
 		}
 		
-		String candPO = candidate.get_parameter("PO");
+		String candPO = candidate.get_parameter("P0");
 		String candRA = candidate.get_parameter("RAJ");
-		String candDEC = candidate.get_parameter("DEC");
+		String candDEC = candidate.get_parameter("DECJ");
 		String candDM = candidate.get_parameter("DM");
 		String candName = candidate.sourceName;
 		
