@@ -15,7 +15,7 @@ public class TPDIAStorm {
 		
 		NodeSiftTest.main(args);
 		WindowSiftTest.main(args);
-		//MatchingAccuracyTest.main(args);
+		MatchingAccuracyTest.main(args);
 		
 		//System.out.println("Interpreter created");
 		//KnownSourceMatcherTest.main(args);

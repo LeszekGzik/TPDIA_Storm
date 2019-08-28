@@ -15,14 +15,14 @@ public class MatchingAccuracyTest {
 		ks1.process_atnf_formatted_line("DM    22.504          6    cn95");
 		ks1.getRefSep();
 		
-		System.out.println("\\tSource name   : " + ks1.getName());
-		System.out.println("\\tSource RA     : " + ks1.get_parameter("RAJ"));
-		System.out.println("\\tSource DEC    : " + ks1.get_parameter("DECJ"));
-		System.out.println("\\tSource P0 (s) : " + ks1.get_parameter("P0"));
-		System.out.println("\\tSource P0 (ms): " + Float.parseFloat(ks1.get_parameter("P0"))*1000);
-		System.out.println("\\tSource F0 (Hz): " + ks1.get_parameter("F0"));
-		System.out.println("\\tSource DM     : " + ks1.get_parameter("DM"));
-		System.out.println("\\tSource ref sep: " + ks1.getRefSep());
+		System.out.println("\tSource name   : " + ks1.getName());
+		System.out.println("\tSource RA     : " + ks1.get_parameter("RAJ"));
+		System.out.println("\tSource DEC    : " + ks1.get_parameter("DECJ"));
+		System.out.println("\tSource P0 (s) : " + ks1.get_parameter("P0"));
+		System.out.println("\tSource P0 (ms): " + Float.parseFloat(ks1.get_parameter("P0"))*1000);
+		System.out.println("\tSource F0 (Hz): " + ks1.get_parameter("F0"));
+		System.out.println("\tSource DM     : " + ks1.get_parameter("DM"));
+		System.out.println("\tSource ref sep: " + ks1.getRefSep());
 		
 		float test_min_period = 1.06f;
 		float test_max_period = 1.3f;
