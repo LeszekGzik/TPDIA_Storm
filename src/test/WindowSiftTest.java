@@ -1,6 +1,8 @@
 package test;
 import model.Window;
 import java.util.*;
+import org.apache.commons.math3.stat.descriptive.moment.*;
+import org.apache.commons.math3.stat.descriptive.summary.Sum;
 
 public class WindowSiftTest {
 
@@ -8,23 +10,27 @@ public class WindowSiftTest {
 	public static void main(String[] args) {
 		//losowanie liczb
 		Random rand = new Random();
-		int[] data = new int[1000];
+		double[] data = new double[1000];
 		for(int i = 0; i<data.length; i++) {
 			data[i] = rand.nextInt(10) + 1;
 		}
 		
+		Mean mean = new Mean();
+		Sum sum = new Sum();
+		Variance var = new Variance();
+		
 		//podsumowanie losowych danych
 		System.out.println("\tInput data properties:");
-		System.out.println("Data sum: " + calculateSum(data));
-		System.out.println("Data mean: " + calculateMean(data));
-		System.out.println("Data var: " + calculateVariance(data));
+		System.out.println("Data sum: " + sum.evaluate(data));
+		System.out.println("Data mean: " + mean.evaluate(data));
+		System.out.println("Data var: " + var.evaluate(data));
 		
 		//test
 		int maxWindowSize = 10;
 		float userConf = 0.8f;
 		Window win = new Window(maxWindowSize, userConf);
-		for(int d : data) {
-			win.observe(d);
+		for(double d : data) {
+			win.observe((int)d);
 		}
 		System.out.println("\n\tAs observed by window class:");
 		win.debug();
@@ -46,29 +52,5 @@ public class WindowSiftTest {
 		win.debug();
 		System.out.println("Match count: " + matches.size());
 		System.out.println("\t" + matches);
-	}
-	
-	private static float calculateVariance(int[] data) {
-		float var = 0.0f;
-		float temp;
-		float mean = calculateMean(data);
-		
-		for(int i=0; i<data.length; i++) {
-			temp = (float)data[i] - mean;
-			var += temp*temp;
-		}
-		return var/data.length;
-	}
-	
-	private static float calculateMean(int[] data) {
-		return calculateSum(data)/data.length;
-	}
-
-	private static float calculateSum(int[] data) {
-		float sum = 0.0f;
-		for(int i=0; i<data.length; i++) {
-			sum+=data[i];
-		}
-		return sum;
 	}
 }

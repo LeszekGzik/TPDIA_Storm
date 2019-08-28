@@ -1,12 +1,12 @@
 package test;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import org.python.util.PythonInterpreter;
+import java.util.Random;
 
 import java.lang.Math;
-
+import org.apache.commons.math3.stat.descriptive.moment.*;
 /*
 *********************************************************************************
 
@@ -34,7 +34,8 @@ import java.lang.Math;
 
 public class FeaturesExtraction {
 
-	static PythonInterpreter interp = new PythonInterpreter();
+	//static PythonInterpreter interp = new PythonInterpreter();
+	
 	/*
 	 * Extracts statistics from the values stored in the supplied data array.
 	 * 
@@ -145,7 +146,7 @@ public class FeaturesExtraction {
 					float skew_ = (float) ((one_over_n * mean_subtracted_sum_power_3)
 							/ Math.pow(Math.sqrt(one_over_n * mean_subtracted_sum_power_2), 3));
 
-					List<Float> statistics = null;
+					List<Float> statistics = new ArrayList<Float>();
 					statistics.add(mean_);
 					statistics.add(stdev_);
 					statistics.add(skew_);
@@ -162,42 +163,41 @@ public class FeaturesExtraction {
 	}
 	
 	
-	public void featureExtractionTest() {
-
-		interp.exec("%pylab inline");
-		interp.exec("import matplotlib.pyplot as plt");
-		interp.exec("import numpy as np");
+	public void FeatureExtractionTest() {
 		//First generate some random input data, representing individual candidates.
-		interp.exec("data = np.random.randint(low=1,high=11,size=1000)");
-		//Just plot the data to see what it looks like.
-		interp.exec("bin_centres = np.arange(0.5,10.5, 1)");
-		interp.exec("uniq, counts = np.unique(data, return_counts=True)");
-		interp.exec("plt.bar(bin_centres,counts)");
-		interp.exec("plt.ylabel('Frequency')");
-		interp.exec("plt.xlabel('Bin')");
-		interp.exec("plt.title('Distribution of random data')");
-		interp.exec("plt.show()");
-		
+		double[] data = new double[1000];
+		Random rand = new Random();
+		for(int i=0; i<data.length; i++) {
+			data[i]=rand.nextInt(10)+1;
+		}
 		// In principle there are only 10 unique matches.
 		// No we can shuffle the data, e.g.
 		// np.random.shuffle(data)
 		// But we would rather sort it here, to simulate the ordering variable.
-		interp.exec("data = np.sort(data)");
+		java.util.Arrays.parallelSort(data);
 		
-		//First figure out true stats of data:
-		interp.exec("print 'Input data properties:'");
-		interp.exec("print 'Data mean: '    , np.mean(data)");
-		interp.exec("print 'Data STDEV: '   , np.std(data)");
-		interp.exec("print 'Data Skew: '    , skew(data)");
-		interp.exec("print 'Data Kurtosis: ', kurtosis(data), '\n'");
+		Kurtosis kurt = new Kurtosis();
+		StandardDeviation std = new StandardDeviation();
+		Skewness skew = new Skewness();
+		Mean mean = new Mean();
 		
-		interp.exec("extracted_features = extract_features(data)");
-		
-		interp.exec("print 'Extracted features:'");
-		interp.exec("print 'Data mean: '    , extracted_features[0]");
-		interp.exec("print 'Data STDEV: '   , extracted_features[1]");
-		interp.exec("print 'Data Skew: '    , extracted_features[2]");
-		interp.exec("print 'Data Kurtosis: ', extracted_features[3], '\n'");
-	}
+		System.out.println("Input data properties:");
+		System.out.println("Data mean: "+ mean.evaluate(data));
+		System.out.println("Data STDEV: " + std.evaluate(data));
+		System.out.println("Data Skew: " + skew.evaluate(data));
+		System.out.println("Data Kurtosis: " + kurt.evaluate(data));
 
+		List<Float> fdata = new ArrayList<Float>();
+		for(double x : data) {
+			fdata.add((float)x);
+		}
+		List<Float> extracted_features = extract_features(fdata);
+		
+		System.out.println("\nExtracted features:");
+		System.out.println("Data mean: "+ extracted_features.get(0));
+		System.out.println("Data STDEV: " + extracted_features.get(1));
+		System.out.println("Data Skew: " + extracted_features.get(2));
+		System.out.println("Data Kurtosis: " + extracted_features.get(3));
+		
+	}
 }

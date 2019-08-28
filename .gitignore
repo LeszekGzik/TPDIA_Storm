@@ -2,4 +2,4 @@
 *.classpath
 /bin/
 /lib/cachedir/
-/config.txt
+config.txt

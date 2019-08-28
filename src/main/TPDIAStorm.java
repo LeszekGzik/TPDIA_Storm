@@ -5,21 +5,23 @@ import backtype.storm.LocalCluster;
 import backtype.storm.topology.TopologyBuilder;
 import bolts.NodeSiftingBolt;
 import spouts.RandomNumberSpout;
-import test.KnownSourceMatcherTest;
-import test.MatchingAccuracyTest;
-import test.NodeSiftTest;
-import test.WindowSiftTest;
+import test.*;
 
 public class TPDIAStorm {
 
 	public static void main(String[] args) {
+		FeaturesExtraction fe = new FeaturesExtraction();
+		fe.FeatureExtractionTest();
+		
 		NodeSiftTest.main(args);
 		WindowSiftTest.main(args);
-		MatchingAccuracyTest.main(args);
+		//MatchingAccuracyTest.main(args);
 		
-		System.out.println("Interpreter created");
-		KnownSourceMatcherTest.main(args);
-		System.out.println("TEST END");
+		//System.out.println("Interpreter created");
+		//KnownSourceMatcherTest.main(args);
+		//System.out.println("TEST END");
+		
+		
 		
 		/*Config config = new Config();
 		config.setDebug(true);
