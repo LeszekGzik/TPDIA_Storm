@@ -409,21 +409,19 @@ public class PSRCATEntry {
     public double[] equatorialToGalactic(double ascension, double declination){
     	
     	double b,l;
-    	double ascensionR = Math.toRadians(ascension);
-    	double declinationR = Math.toRadians(declination);
-    	double tmp274 = Math.toRadians(27.4);
-    	double tmp192 = Math.toRadians(192.25); 
-    	b=Math.pow(Math.sin( Math.cos(declinationR) * Math.cos(tmp274) * Math.cos(ascensionR - tmp192) + Math.sin(declinationR) * Math.asin(tmp274) ), -1);
-    	double x = Math.asin(declinationR)-Math.sin(b)*Math.sin(tmp274);
-    	double y = Math.cos(declinationR)*Math.cos(tmp274)*Math.sin(ascensionR-tmp192);
-    	l=Math.pow( Math.tan( x / y ) ,-1) + 33;
+    	double tmp274 = 27.4;
+    	double tmp192 = 192.25; 
+    	b=Math.asin( Math.cos(declination) * Math.cos(tmp274) * Math.cos(ascension - tmp192) + Math.sin(declination) * Math.sin(tmp274));
+    	double x = Math.sin(declination)-Math.sin(b)*Math.sin(tmp274);
+    	double y = Math.cos(declination)*Math.cos(tmp274)*Math.sin(ascension-tmp192);
+    	l=Math.atan( x / y ) + 33;
    
     	if(x<0 && y>0)
-    		l= l + 180;
+    		l += 180;
     	if(x<0 && y<0)
-    		l=l - 360;
+    		l += 180;
     	if(x>0 && y<0)
-    		l=l + 360;
+    		l += 360;
     	
     	double[] result = new double[] {b,l};
 
