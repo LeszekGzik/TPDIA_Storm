@@ -67,7 +67,7 @@ public class Matcher {
 			float sourceSep = (float)(candidate.calcsep(knownSource.coord));
 			if(sourceSep <= 2*maxSep) {
 				compareToKnownSource(candidate,knownSource,sourceSep);
-				compareRight(candidate, knownsources, index, maxSep);
+				compareRight(candidate, knownsources, index+1, maxSep);
 			}
 		}
 	}
@@ -78,7 +78,7 @@ public class Matcher {
 			float sourceSep = (float)(candidate.calcsep(knownSource.coord));
 			if(sourceSep <= 2*maxSep) {
 				compareToKnownSource(candidate,knownSource,sourceSep);
-				compareLeft(candidate, knownsources, index, maxSep);
+				compareLeft(candidate, knownsources, index+1, maxSep);
 			}
 		}
 	}

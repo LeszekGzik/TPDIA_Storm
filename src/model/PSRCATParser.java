@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 import model.PSRCATEntry;
@@ -46,16 +47,16 @@ public class PSRCATParser{
             return null;
 
         // Stores the objects correctly parsed.
-        List<PSRCATEntry>atnf_srcs = null;
+        List<PSRCATEntry>atnf_srcs = new ArrayList<PSRCATEntry>();
 
-        if (PSRCATParser.is_catalogue_file(path)) {
+        //if (PSRCATParser.is_catalogue_file(path)) {
         	try {
         	//File psr_cat = new File(path);
         	FileInputStream fstream = new FileInputStream(path);
         	BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
             // A temporary object that is used create new
             // PSRCATEntry instances.
-        	PSRCATEntry atnf_src;// = new PSRCATEntry();
+        	PSRCATEntry atnf_src = new PSRCATEntry();
 
             // The ATNF catalog file contains entries
             // delimited by the following lines:
@@ -101,8 +102,6 @@ public class PSRCATParser{
         	String strLine;
         	while((strLine = br.readLine()) != null) {
         		
-        		atnf_src = new PSRCATEntry(); 
-        		
        			if(strLine.charAt(0) == '#') {
                     // Ignore these lines.
                     continue;
@@ -115,6 +114,7 @@ public class PSRCATParser{
                     // object to the known source dictionary
                     // and clean up.
                     atnf_srcs.add(atnf_src);
+            		atnf_src = new PSRCATEntry(); 
                 	//atnf_srcs.append( copy.deepcopy(atnf_src));
                     //atnf_srcs.add((PSRCATEntry)SerializationUtils.clone(atnf_src));
                     
@@ -143,6 +143,11 @@ public class PSRCATParser{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+        //}
+        	
+        for(PSRCATEntry entry : atnf_srcs) {
+        	entry.coord[0] = entry.sourceParameters.get(entry.KEY_RAJ);
+        	entry.coord[1] = entry.sourceParameters.get(entry.KEY_DECJ);
         }
 
         return atnf_srcs;

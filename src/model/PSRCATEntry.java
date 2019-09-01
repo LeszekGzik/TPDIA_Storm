@@ -106,7 +106,7 @@ public class PSRCATEntry {
         this.JName = name;
         this.BName = name;
         this.refsep = 0.0;
-        this.coord = null;
+        this.coord = new String[2];
 
         // Initialise flags, used to process data. 
         // These flags correspond to the keywords used
@@ -749,12 +749,12 @@ public class PSRCATEntry {
             if(this.coord != null) {
             	
             	double[] raDec = hMSandDMS2Deg(sourceParameters.get(KEY_RAJ), sourceParameters.get(KEY_DECJ));
-            	double[] raDecR = new double[] {};
+            	double[] raDecR = new double[2];
             	raDecR[0] = Math.toRadians(raDec[0]);
             	raDecR[1] = Math.toRadians(raDec[1]);
             	
             	double[] coordRaDec = hMSandDMS2Deg(coord[0], coord[1]);
-            	double[] coordRaDecR = new double[] {};
+            	double[] coordRaDecR = new double[2];
             	coordRaDecR[0] = Math.toRadians(coordRaDec[0]);
             	coordRaDecR[1] = Math.toRadians(coordRaDec[1]);
             	
