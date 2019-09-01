@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.PSRCATEntry;
-
+ 
 public class PSRCATParser{
    
     //Parses an ATNF pulsar catalog database file.

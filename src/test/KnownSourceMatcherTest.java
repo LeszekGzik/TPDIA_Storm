@@ -72,11 +72,11 @@ public class KnownSourceMatcherTest {
 			URL url = new URL("http://www.atnf.csiro.au/people/pulsar/psrcat/downloads/psrcat_pkg.tar.gz");
 		}
 		catch(Exception e)
-		{
+		{ 
 			e.printStackTrace();
 		}
 		String full_path = file_tmp.getAbsolutePath();
-		String database_file_path = full_path + "/psrcat.db";
+		String database_file_path = full_path + "\\psrcat.db";
 		System.out.println("Database file at: " + database_file_path);
 		
 		// Build path to the output file...
