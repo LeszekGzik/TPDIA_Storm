@@ -34,7 +34,7 @@ public class PSRCATEntry {
     String JName;
     String BName;
     double refsep; 
-    String[] coord; //ra dan dec respectivly
+    String[] coord; //ra and dec respectivly
 
     String KEY_PSRJ;
     String KEY_PSRB;
