@@ -99,7 +99,7 @@ public class KnownSourceMatcherTest {
 	    List<PSRCATEntry> atnf_sources = PSRCATParser.parse_as_list(database_file_path);
 
 	    System.out.println("ATNF Entries: " + atnf_sources.size());
-	    
+	    System.out.println(atnf_sources.get(1).__str__());
 	    // Now sort the list in place according to separation 
 	    // from the reference point...
 	    atnf_sources.sort(new EntryComparator());

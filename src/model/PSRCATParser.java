@@ -21,7 +21,7 @@ public class PSRCATParser{
     //
     // ******************************
 
-    public static List<PSRCATEntry> parse_as_list(String path) {
+    public static ArrayList<PSRCATEntry> parse_as_list(String path) {
         /*
         Parses an ATNF pulsar catalog file. It returns the
         contents as a list of PSRCATEntry objects.
@@ -47,7 +47,7 @@ public class PSRCATParser{
             return null;
 
         // Stores the objects correctly parsed.
-        List<PSRCATEntry>atnf_srcs = new ArrayList<PSRCATEntry>();
+        ArrayList<PSRCATEntry>atnf_srcs = new ArrayList<PSRCATEntry>();
 
         //if (PSRCATParser.is_catalogue_file(path)) {
         	try {

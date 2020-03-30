@@ -3,6 +3,7 @@ package model;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,9 +22,9 @@ import org.python.util.PythonInterpreter;
 
 
 
-public class PSRCATEntry {
+public class PSRCATEntry implements Serializable  {
 
-	
+	private static final long serialVersionUID = 1L;
 	
 	//tu powinna byæ œcie¿ka do folderu z modu³ami
 	static String PyModulePath = "";
