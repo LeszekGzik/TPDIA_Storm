@@ -32,11 +32,6 @@ public class DataParserSpout implements IRichSpout {
 			}
 		}
 		
-		
-		
-		
-		//
-		
 	}
 
 	@Override 

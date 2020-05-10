@@ -3,12 +3,9 @@ package main;
 import backtype.storm.Config;
 import backtype.storm.LocalCluster;
 import backtype.storm.topology.TopologyBuilder;
-import bolts.MatcherBolt;
-import bolts.NodeSiftingBolt;
-import model.FileLoader;
-import model.PSRCATEntry;
-import spouts.EntryReaderSpout;
-import spouts.RandomNumberSpout;
+import bolts.*;
+import model.*;
+import spouts.*;
 import test.*;
 
 public class TPDIAStorm {
@@ -33,15 +30,12 @@ public class TPDIAStorm {
 		config.put("inputFile", "test.txt");
 		config.setDebug(true);
 		config.put(Config.TOPOLOGY_MAX_SPOUT_PENDING, 1);
-		// config.put("Loader", loader);
-		// ArrayList<PSRCATEntry> abc = new ArrayList<>();
-
-		// config.put("Loader", aaa);
 		TopologyBuilder builder = new TopologyBuilder();
 		builder.setSpout("entry-reader-spout", new EntryReaderSpout(loader));
-		builder.setBolt("matcher-bolt", new MatcherBolt(loader)).shuffleGrouping("entry-reader-spout");
-		// builder.setBolt("word-counter", new
-		// WordCounterBolt()).shuffleGrouping("word-spitter");
+		//builder.setBolt("matcher-bolt", new MatcherBolt(loader)).shuffleGrouping("entry-reader-spout");
+		builder.setBolt("sifting-bolt", new PeriodSiftingBolt(loader)).shuffleGrouping("entry-reader-spout");
+		builder.setBolt("sifting-bolt-2", new FreqSiftingBolt(loader)).shuffleGrouping("sifting-bolt");
+		
 
 		LocalCluster cluster = new LocalCluster();
 		cluster.submitTopology("HelloStorm", config, builder.createTopology());

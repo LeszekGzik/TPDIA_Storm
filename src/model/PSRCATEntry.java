@@ -327,10 +327,10 @@ public class PSRCATEntry implements Serializable  {
 	   		// Here frequency is automatically computed from
 	   		// the period.
 	
-	   		if(Double.valueOf(value[0]) == 0)
+	   		if(Double.parseDouble(value[0]) != 0)
 	   		{
 	   			sourceParameters.put(key, value.toString());
-	   			sourceParameters.put(KEY_F0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
+	   			sourceParameters.put(KEY_P0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
 	   			//this.sourceParameters[key] = value;
 	   			//this.sourceParameters[this.KEY_F0] =[str(float(1.0) / float(value[0]))];
 	   		}
@@ -339,7 +339,7 @@ public class PSRCATEntry implements Serializable  {
 	            // This error will only occur if period is 
 	            // zero - which it shouldn't be.
 	    		sourceParameters.put(key, "1.0");
-	    		sourceParameters.put(KEY_F0, "1.0");
+	    		sourceParameters.put(KEY_P0, "1.0");
 	            //this.sourceParameters[key] = ['1.0'];
 	            //this.sourceParameters[this.KEY_F0] = ['1.0'];
 	    	}
@@ -348,9 +348,9 @@ public class PSRCATEntry implements Serializable  {
 	    else if(key.equals(KEY_F0)) {  // F0 is the frequency in Hz.
 	    	// Here period is automatically computed from 
 	    	// the frequency.
-			if(Double.valueOf(value[0]) == 0){
+			if(Double.parseDouble(value[0]) != 0){
 				sourceParameters.put(key, value.toString());
-				sourceParameters.put(KEY_P0, String.valueOf(((double)(1.0)) / Double.valueOf(value[0])));
+				sourceParameters.put(KEY_F0, String.valueOf(((double)(1.0)) / Double.parseDouble(value[0])));
 	//        			this.sourceParameters[key] = value;
 	//        			this.sourceParameters[this.KEY_P0] =[str(float(1.0) / float(value[0]))];
 			}
