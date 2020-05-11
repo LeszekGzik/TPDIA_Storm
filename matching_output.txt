@@ -40968,3 +40968,2043 @@ Angular separation of psr and cand (deg): 1.0
 
 @-----------------------------------------------------------------
 
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.17_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8547008547008548 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9902973
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.17_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8547008547008548 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9902973
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.17_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8547008547008548 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9902973
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.17_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8547008547008548 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9902973
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.17_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8547008547008548 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9902973
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.171_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8539709649871904 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9911437
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.171_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8539709649871904 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9911437
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.171_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8539709649871904 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9911437
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.171_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8539709649871904 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9911437
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.171_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8539709649871904 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9911437
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1719999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8532423936213646 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99199003
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1719999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8532423936213646 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99199003
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1719999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8532423936213646 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99199003
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1719999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8532423936213646 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99199003
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1719999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8532423936213646 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99199003
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.173_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8525149190110827 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99283653
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.173_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8525149190110827 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99283653
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.173_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8525149190110827 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99283653
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.173_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8525149190110827 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99283653
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.173_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8525149190110827 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99283653
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1739999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8517888289428304 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99368286
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1739999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8517888289428304 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99368286
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1739999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8517888289428304 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99368286
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1739999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8517888289428304 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99368286
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1739999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8517888289428304 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99368286
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.175_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.851063829787234 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9945293
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.175_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.851063829787234 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9945293
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.175_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.851063829787234 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9945293
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.175_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.851063829787234 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9945293
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.175_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.851063829787234 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9945293
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.176_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8503401360544218 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99537575
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.176_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8503401360544218 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99537575
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.176_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8503401360544218 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99537575
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.176_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8503401360544218 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99537575
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.176_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8503401360544218 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99537575
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1769999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8496177442326036 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9962221
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1769999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8496177442326036 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9962221
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1769999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8496177442326036 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9962221
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1769999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8496177442326036 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9962221
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1769999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8496177442326036 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9962221
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.178_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8488964346349746 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9970686
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.178_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8488964346349746 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9970686
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.178_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8488964346349746 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9970686
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.178_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8488964346349746 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9970686
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.178_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8488964346349746 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9970686
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1789999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8481764926358348 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9979149
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1789999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8481764926358348 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9979149
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1789999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8481764926358348 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9979149
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1789999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8481764926358348 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9979149
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1789999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8481764926358348 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.9979149
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.18_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8474576271186441 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99876136
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.18_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8474576271186441 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99876136
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.18_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8474576271186441 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99876136
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.18_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8474576271186441 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99876136
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.18_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8474576271186441 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99876136
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.181_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8467400508044031 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99960774
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.181_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8467400508044031 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99960774
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.181_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8467400508044031 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99960774
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.181_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8467400508044031 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99960774
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.181_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8467400508044031 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 0.99960774
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1819999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8460237602388967 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0004542
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1819999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8460237602388967 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0004542
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1819999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8460237602388967 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0004542
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1819999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8460237602388967 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0004542
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1819999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8460237602388967 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0004542
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.183_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8453085376162299 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0013006
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.183_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8453085376162299 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0013006
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.183_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8453085376162299 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0013006
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.183_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8453085376162299 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0013006
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.183_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8453085376162299 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0013006
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1839999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8445946659286034 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.002147
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1839999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8445946659286034 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.002147
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1839999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8445946659286034 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.002147
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1839999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8445946659286034 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.002147
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1839999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8445946659286034 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.002147
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.185_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8438818565400843 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0029935
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.185_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8438818565400843 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0029935
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.185_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8438818565400843 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0029935
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.185_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8438818565400843 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0029935
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.185_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8438818565400843 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0029935
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.186_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8431703204047218 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0038399
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.186_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8431703204047218 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0038399
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.186_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8431703204047218 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0038399
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.186_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8431703204047218 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0038399
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.186_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8431703204047218 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0038399
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1869999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8424600541246886 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0046861
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1869999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8424600541246886 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0046861
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1869999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8424600541246886 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0046861
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1869999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8424600541246886 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0046861
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1869999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8424600541246886 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0046861
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.188_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8417508417508418 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0055326
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.188_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8417508417508418 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0055326
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.188_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8417508417508418 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0055326
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.188_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8417508417508418 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0055326
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.188_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8417508417508418 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0055326
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1889999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8410429639228734 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.006379
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1889999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8410429639228734 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.006379
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1889999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8410429639228734 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.006379
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1889999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8410429639228734 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.006379
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1889999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8410429639228734 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.006379
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1899999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8403362050702693 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0072254
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1899999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8403362050702693 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0072254
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1899999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8403362050702693 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0072254
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1899999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8403362050702693 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0072254
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1899999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8403362050702693 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0072254
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.191_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8396305625524769 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0080719
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.191_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8396305625524769 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0080719
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.191_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8396305625524769 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0080719
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.191_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8396305625524769 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0080719
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.191_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8396305625524769 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0080719
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1919999_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8389262448763629 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0089182
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1919999_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8389262448763629 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0089182
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1919999_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8389262448763629 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0089182
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1919999_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8389262448763629 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0089182
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.1919999_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8389262448763629 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0089182
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.193_22.3
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8382229673093042 DM:22.3
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0097647
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.193_22.4
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8382229673093042 DM:22.4
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0097647
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.193_22.5
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8382229673093042 DM:22.5
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0097647
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.193_22.6
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8382229673093042 DM:22.6
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0097647
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+
+POSSIBLE MATCH FOR: 
+J0006+1834 Duplicate_1.193_22.7
+
+Candidate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8382229673093042 DM:22.7
+
+PSR: J0006+1834 Duplicate -> RAJ: 23:46:50.45 DECJ:-6:09:59.5 P0:0.8464079500171798 DM:22.504
+
+Harmonic Number = 1.0
+
+Harmonic Period = 0.84640795
+
+Harmonic Period/Candidate Period = 1.0097647
+
+Angular separation of psr and cand (deg): 1.0
+
+@-----------------------------------------------------------------
+

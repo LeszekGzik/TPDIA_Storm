@@ -32,9 +32,9 @@ public class TPDIAStorm {
 		config.put(Config.TOPOLOGY_MAX_SPOUT_PENDING, 1);
 		TopologyBuilder builder = new TopologyBuilder();
 		builder.setSpout("entry-reader-spout", new EntryReaderSpout(loader));
-		//builder.setBolt("matcher-bolt", new MatcherBolt(loader)).shuffleGrouping("entry-reader-spout");
 		builder.setBolt("sifting-bolt", new PeriodSiftingBolt(loader)).shuffleGrouping("entry-reader-spout");
 		builder.setBolt("sifting-bolt-2", new FreqSiftingBolt(loader)).shuffleGrouping("sifting-bolt");
+		builder.setBolt("matching-bolt", new MatchingBolt(loader)).shuffleGrouping("sifting-bolt-2");
 		
 
 		LocalCluster cluster = new LocalCluster();
