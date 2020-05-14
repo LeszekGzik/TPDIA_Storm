@@ -699,7 +699,9 @@ public class PSRCATEntry implements Serializable  {
     	
     	double y = Math.sin(raDecR[1])*Math.sin(0) + Math.cos(raDecR[1])*Math.cos(0)*Math.cos(0 - raDecR[0]);
     	
-    	double tan = Math.pow(Math.tan(x/y), -1);
+    	double tan = 0;
+    	if(Math.tan(x/y) != 0)
+    		tan = Math.pow(Math.tan(x/y), -1);
     	
     	if(tan<0) {
     		this.refsep = (180/Math.PI)*tan + 180;
@@ -765,7 +767,10 @@ public class PSRCATEntry implements Serializable  {
             	
             	double y = Math.sin(raDecR[1])*Math.sin(coordRaDecR[1]) + Math.cos(raDecR[1])*Math.cos(coordRaDecR[1])*Math.cos(coordRaDecR[0] - raDecR[0]);
             	
-            	double tan = Math.pow(Math.tan(x/y), -1);
+            	double tan = 0;
+            	if(Math.tan(x/y) != 0)
+            		tan = Math.pow(Math.tan(x/y), -1);
+            	
             	double sep;
             	if(tan<0) {
             		sep = (180/Math.PI)*tan + 180;

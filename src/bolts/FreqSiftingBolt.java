@@ -25,7 +25,7 @@ public class FreqSiftingBolt implements IRichBolt{
 	@Override
 	public void prepare(Map stormConf, TopologyContext context, OutputCollector collector) {
 		this.collector = collector;
-		node = new Node(0.0f, 1000.0f, 100001);
+		node = new Node(0.0f, 1000.0f, 1000001);
 	}
 	@Override
 	public void execute(Tuple input) {

@@ -13,7 +13,7 @@ public class EntryComparator implements Comparator<PSRCATEntry> {
 			return 0;
 		}
 		if(o1.getRefSep() < o2.getRefSep()) {
-			return -1;
+			return 1;
 		}else
 			return 0;
 	}

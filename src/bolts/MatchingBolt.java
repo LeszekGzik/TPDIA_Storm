@@ -47,10 +47,17 @@ public class MatchingBolt implements IRichBolt{
 	
 	@Override
 	public void execute(Tuple input) {
+		System.out.println("DUPA");
 		PSRCATEntry entry = (PSRCATEntry)input.getValue(0); 
 		System.out.println("MATCHER received " + entry.getName());
-		int index = matcher.findSearchIndex(entry, atnf_sources);
-		matcher.compare(entry, atnf_sources,index,(float)0.0001);
+		
+		for (int ks = 0; ks < atnf_sources.size(); ks++) {
+
+			// Find the search index
+			int index = matcher.findSearchIndex(entry, atnf_sources);
+			matcher.compare(entry, atnf_sources,index,(float)0.0001);
+		}
+		
 		System.out.println("Possible matches for " + entry.getName() + ": "+ matcher.getPossibleMatches() );
 		if(matcher.getPossibleMatches() == 0) {
 			System.out.println(entry.getName() + " has no matches!");

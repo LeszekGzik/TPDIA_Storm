@@ -74,7 +74,7 @@ public class Matcher {
 	
 	public void compareLeft(PSRCATEntry candidate, List<PSRCATEntry> knownsources, int index, float maxSep) {
 		if((index - 1 < knownsources.size()) && (index-1 > -1)) {
-			PSRCATEntry knownSource = knownsources.get(index + 1);
+			PSRCATEntry knownSource = knownsources.get(index - 1);
 			float sourceSep = (float)(candidate.calcsep(knownSource.coord));
 			if(sourceSep <= 2*maxSep) {
 				compareToKnownSource(candidate,knownSource,sourceSep);
@@ -106,6 +106,14 @@ public class Matcher {
 		}
 		else if (candPO.contains("*")) {
 			candPO = "0.0";
+		}
+		
+		//TODO - czy to powinno dzia³aæ w ten sposób?
+		if(ksPO==null) {
+			ksPO = "0.0";
+		}
+		else if (ksPO.contains("*")) {
+			ksPO = "0.0";
 		}
 		
 		if(candDM==null) {
