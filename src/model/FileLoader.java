@@ -18,6 +18,8 @@ public class FileLoader implements Serializable {
 	//public File outputFile;
 	public String outputFilePath = "OutputMatch.txt";
 	//public File inputFile;
+	File outputFile = new File("OutputMatch.txt");
+	private ArrayList<PSRCATEntry> outputList = new ArrayList<PSRCATEntry>();
 	private ArrayList<PSRCATEntry> atnf_sources;
 	private int atnfIndex = 0;
 	public String name = "This is test name";
@@ -61,6 +63,24 @@ public class FileLoader implements Serializable {
 	    // from the reference point...
 	    atnf_sources.sort(new EntryComparator());
 	    this.atnfIndex =  atnf_sources.size() -1;
+	    
+	    //TEST matching
+//	    PSRCATEntry tmp1 = atnf_sources.get(1);
+//	    PSRCATEntry tmp2 = atnf_sources.get(1);
+//	    PSRCATEntry tmp3 = atnf_sources.get(1);
+//	    PSRCATEntry tmp4 = atnf_sources.get(1);
+//	    
+//	    atnf_sources.clear();
+//	    atnf_sources.add(tmp1);
+//	    atnf_sources.add(tmp1);
+//	    atnf_sources.add(tmp1);
+//	    atnf_sources.add(tmp1);
+//	    
+//	    System.out.println("1:  "+atnf_sources.get(0).__str__());
+//	    System.out.println("2:  "+atnf_sources.get(1).__str__());
+//	    System.out.println("3:  "+atnf_sources.get(2).__str__());
+//	    System.out.println("4:  "+atnf_sources.get(3).__str__());
+//	    this.atnfIndex =  atnf_sources.size() -1;
 	}
 	
 	public PSRCATEntry getTuple()
@@ -77,6 +97,42 @@ public class FileLoader implements Serializable {
 			System.out.println("ret obj");
 			return output;
 		}
+	}
+	
+	public void addOutputEntry(PSRCATEntry entry) {
+		outputList.add(entry);
+	}
+	
+	public void saveOutput() {
+		System.out.println("outputList Size:"+outputList.size());
+		File outputFile = new File(outputFilePath);
+		System.out.println("outputList Size:"+outputList.size());
+	    try {
+	    	PrintWriter writer = new PrintWriter(outputFile);
+	    	writer.print("");
+	    	for(int i=0; i<outputList.size(); i++)
+	    	{
+	    		writer.println(outputList.get(i).__str__());
+	    	}
+	    	writer.close();
+	    }
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public void saveToFile(PSRCATEntry entry) {
+		try {
+			PrintWriter writer = new PrintWriter(outputFile);
+			writer.println(entry.__str__());
+			writer.close();
+		 }
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public ArrayList<PSRCATEntry>getAtnfSources(){

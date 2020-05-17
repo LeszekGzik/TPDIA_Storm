@@ -46,7 +46,7 @@ public class FreqSiftingBolt implements IRichBolt{
 			System.out.println(entry.getName() + " has a null frequency.");
 			collector.emit(new Values(entry));
 		}
-		//collector.ack(input);
+		collector.ack(input);
 	}
 	@Override
 	public void declareOutputFields(OutputFieldsDeclarer declarer) {

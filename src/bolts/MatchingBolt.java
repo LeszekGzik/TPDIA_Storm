@@ -33,8 +33,10 @@ public class MatchingBolt implements IRichBolt{
 		System.out.println("TEST");
 		File file_tmp = new File("psrcat_tar");
 		String full_path = file_tmp.getAbsolutePath();
-		String database_file_path = full_path + "\\psrcat.db";
-		this.atnf_sources = PSRCATParser.parse_as_list(database_file_path);
+//		String database_file_path = full_path + "\\psrcat.db";
+//		this.atnf_sources = PSRCATParser.parse_as_list(database_file_path);
+		this.atnf_sources = loader.getAtnfSources();
+		//TEST matching
 		int size = atnf_sources.size()*9/10;
 		for(int i = 0; i < size; i++)	//tworzenie listy znanych obiektów sk³adaj¹cej siê z 10% zbioru danych testowych
 		{
@@ -59,10 +61,13 @@ public class MatchingBolt implements IRichBolt{
 		}
 		
 		System.out.println("Possible matches for " + entry.getName() + ": "+ matcher.getPossibleMatches() );
+		//TEST matching
+//		if(matcher.getPossibleMatches() != 0) {
 		if(matcher.getPossibleMatches() == 0) {
 			System.out.println(entry.getName() + " has no matches!");
-			collector.emit(new Values(entry));
+			collector.emit(input, new Values(entry));
 		}
+		collector.ack(input);
 	}
 	@Override
 	public void declareOutputFields(OutputFieldsDeclarer declarer) {

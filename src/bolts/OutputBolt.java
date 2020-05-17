@@ -1,5 +1,7 @@
 package bolts;
-import java.util.List;
+
+import java.io.File;
+import java.util.ArrayList;
 import java.util.Map;
 
 import backtype.storm.task.OutputCollector;
@@ -10,43 +12,37 @@ import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
 import model.FileLoader;
+import model.Matcher;
 import model.Node;
 import model.PSRCATEntry;
+import model.PSRCATParser;
 
-public class PeriodSiftingBolt implements IRichBolt{
+public class OutputBolt implements IRichBolt{
 	private OutputCollector collector;
 	private FileLoader loader;
-	Node node;
+	//Node node;
 	
-	public PeriodSiftingBolt(FileLoader loader) {
+	public OutputBolt(FileLoader loader) {
 		this.loader = loader;
 	}
 	
 	@Override
 	public void prepare(Map stormConf, TopologyContext context, OutputCollector collector) {
 		this.collector = collector;
-		node = new Node(0.0f, 1000.0f, 1000001);
+		//node = new Node(0.0f, 1000.0f, 1000001);
 	}
 	@Override
 	public void execute(Tuple input) {
 		PSRCATEntry entry = (PSRCATEntry)input.getValue(0);
-		System.out.println("HELLO " + entry.getName());
-		String value = entry.get_parameter("P0");
-		System.out.println("PERIOD is " + value);
-		if(value != null) {
-			if(!node.isDuplicate(Float.parseFloat(value))) {
-				collector.emit(new Values(entry));
-				System.out.println(entry.getName() + " is not a duplicate");
-			}
-			else {
-				System.out.println(entry.getName() + " is a duplicate!");
-			}
-		}
-		else {
-			System.out.println(entry.getName() + " has a null period.");
-			collector.emit(new Values(entry));
-		}
+		System.out.println();
+		System.out.println("XXXXXXXXXXXXXXXXXX SAVE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		System.out.println();
+		loader.addOutputEntry(entry);
+		//loader.saveToFile(entry);
+		//collector.emit(input,new Values(entry));
 		collector.ack(input);
+		
+
 	}
 	@Override
 	public void declareOutputFields(OutputFieldsDeclarer declarer) {
@@ -55,6 +51,10 @@ public class PeriodSiftingBolt implements IRichBolt{
 
 	@Override
 	public void cleanup() {
+		
+		System.out.println("XXXXXXXXXXXXXXXXXX CLEANUP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		loader.saveOutput();
+		System.out.println("XXXXXXXXXXXXXXXXXX CLEANUP END XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 	}
 	
 	@Override
