@@ -30,7 +30,6 @@ public class FreqSiftingBolt implements IRichBolt{
 	@Override
 	public void execute(Tuple input) {
 		PSRCATEntry entry = (PSRCATEntry)input.getValue(0);
-		System.out.println("HELLO " + entry.getName());
 		String value = entry.get_parameter("F0");
 		System.out.println("FREQ is " + value);
 		if(value != null) {

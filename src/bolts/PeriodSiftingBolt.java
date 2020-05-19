@@ -30,7 +30,6 @@ public class PeriodSiftingBolt implements IRichBolt{
 	@Override
 	public void execute(Tuple input) {
 		PSRCATEntry entry = (PSRCATEntry)input.getValue(0);
-		System.out.println("HELLO " + entry.getName());
 		String value = entry.get_parameter("P0");
 		System.out.println("PERIOD is " + value);
 		if(value != null) {

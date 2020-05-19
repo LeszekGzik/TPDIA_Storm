@@ -49,7 +49,6 @@ public class MatchingBolt implements IRichBolt{
 	
 	@Override
 	public void execute(Tuple input) {
-		System.out.println("DUPA");
 		PSRCATEntry entry = (PSRCATEntry)input.getValue(0); 
 		System.out.println("MATCHER received " + entry.getName());
 		
